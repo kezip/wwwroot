@@ -1,0 +1,666 @@
+﻿/*js公用----------*/
+.select{
+    margin-left: 4px;
+    height: 84px;
+    width: 166px;
+    border:1px solid #cccccc;
+}
+.activeBox .w div .ghostGreen{
+    position: absolute;
+    height: 125px;
+    width: 300px;
+    bottom: -275px;
+    left: 5px;
+    background-color: rgba(47,195,162,0.9);
+}
+.selectSpanOrange{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 14px;
+    width: 14px;
+    color: white;
+    background-color: #ff4e00;
+    line-height: 14px;
+    text-align: center;
+}
+.selectSpanBlack{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 14px;
+    width: 14px;
+    color: #707e91;
+    border:1px solid #999999;
+    line-height: 14px;
+    text-align: center;
+}
+.newSpan{
+    position: absolute;
+    left: 1px;
+    color: white;
+    bottom: 1px;
+    width: 194px;
+    line-height: 28px;
+    background-color: #404040;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.newImg{
+    position: absolute;
+    left: 0px;
+    height: 84px;
+    width: 196px;
+}
+.person .role .oldLi{
+	width: 63px;
+	height: 350px;
+}
+.person .role .newLi{
+	width: 559px;
+	height: 350px;
+}
+.person .role .newLi .liImg{
+	position: absolute;
+	/*width: 622px;*/
+	top: -72px;
+	right: 0px;
+}
+/*js公用  */
+.W{
+    height: 1680px;
+    background-color: yellow;
+}
+
+/*通栏开始*/
+.W .Ttop{
+    height: 41px;
+    background-color:#fff;
+}
+.W .Ttop .top{
+    height: 41px;
+}
+.W .Ttop .tx{
+    float: left;
+    margin-left: 10px;
+    width: 220px;
+    height: 41px;
+    line-height: 41px;
+    background:url("../image/ost-bg.png") 0 -39px no-repeat;
+    z-index: 99;
+    position: relative;
+}
+.W .Ttop .meinv{
+    float: left;
+    position: relative;
+}
+
+.W .Ttop .meinv .jl{
+    width: 980px;
+    height: 185px;
+    position: absolute;
+    top: 0px;
+    left: -220px;
+    display: none;
+}
+.W .Ttop .meinv .jl img{
+    width: 980px;
+}
+
+
+.W .Ttop .cz{
+    float: left;
+    margin-left: 330px;
+    margin-top: 13px;
+}
+
+.W .Ttop .phb{
+    float: right;
+    margin-right: 12px;
+    margin-top: 13px;
+    position: relative;
+}
+
+.W .Ttop .phb .yxphb{
+    position: absolute;
+    right: 0px;
+    top: 28px;
+    width: 699px;
+    height: 455px;
+    background-color: #fff;
+    display: none;
+}
+.W .Ttop .phb .yxphb li{
+    float: left;
+    margin-top: 15px;
+    width: 232px;
+    height: 422px;
+    border-right: 1px solid #ccc;
+}
+.W .Ttop .phb .yxphb li .top{
+    margin-left: 10px;
+    width: 211px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.W .Ttop .phb .yxphb li .top .span1{
+    font-weight: bold;
+    display: block;
+    float: left;
+}
+
+.W .Ttop .phb .yxphb li .top .span2{
+    display: block;
+    float: left;
+    margin-left: 113px;
+}
+.W .Ttop .phb .yxphb li .test{
+    margin-left: 10px;
+    height: 38px;
+    line-height: 38px;
+}
+.W .Ttop .phb .yxphb  .test .span3{
+    float: left;
+    display: block;
+    width: 33px;
+}
+.W .Ttop .phb .yxphb  .yxlist .new{
+    margin-left: 10px;
+    height: 345px;
+    width: 211px;
+}
+.W .Ttop .phb .yxphb  .yxlist .new .linew{
+    width: 211px;
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 14px;
+}
+.W .Ttop .phb .yxphb  .yxlist .new .linew .span5{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color:red;
+    margin-left: 4px;
+    margin-right: 13px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+}
+.W .Ttop .phb .yxphb li:last-child{
+    border-right:0
+}
+.rank{
+    position: absolute;
+    top: 0px;
+    right: 203px;
+    height: 43px;
+    line-height: 43px;
+}
+.rank .rankList{
+    position: absolute;
+    border: 1px solid black;
+    top: 17px;
+    right:-12px;
+    width: 8px;
+    height: 8px;
+    line-height: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.rank .gameList{
+    position: absolute;
+    padding-top: 17px;
+    display: none;
+    background-color: #fff;
+    top: 39px;
+    right: -20px;
+    width: 698px;
+    height: 439px;
+    border: 1px solid #000;
+    z-index: 2;
+}
+.rank .gameList .corner{
+    position: absolute;
+    transform: rotate(45deg);
+    top: -6px;
+    right: 5px;
+    height: 9px;
+    width: 9px;
+    border: 1px solid #000;
+}
+.rank .gameList .corner2{
+    position: absolute;
+    top: -1px;
+    right: 3px;
+    height: 10px;
+    width: 15px;
+    background-color: white;
+    z-index: 3;
+}
+ .rank .gameList .show{
+    margin-top: -17px;
+    width: 700px;
+    height: 458px;
+}
+.rank .gameList .list1,
+.rank .gameList .list2,
+.rank .gameList .list3{
+	float: left;
+    width: 231px;
+    height: 422px;
+    margin-right: 0px;
+}
+.rank .gameList .list2{
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+ .rank .gameList ul li{
+    position: relative;
+    font-size: 12px;
+    font-family: Arial;
+    padding-left: 30px;
+    line-height: 28px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.rank .gameList ul li:nth-child(1){
+    width: 212px;
+    padding-left: 0px;
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: 600;
+    line-height: 22px;
+}
+ .rank .gameList ul li:nth-child(2){
+    padding-left: 0px;
+    line-height: 38px;
+    width: 212px;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: 微软雅黑;
+}
+.rank .gameList ul li:nth-child(1) a{
+    float: right;
+    font-weight: normal;
+}
+/*通栏结束*/
+
+
+/*大背景开始*/
+.W .Tbbg{
+    overflow: hidden;
+    height: 1125px;
+    background:url("../image/header2.jpg") no-repeat;
+}
+
+.W .Tbbg .lg{
+    display: block;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.W .Tbbg .bbg{
+    height: 1125px;
+    position: relative;
+}
+
+.W .Tbbg .bbg .tool{
+    width: 525px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 375px ;
+    cursor:pointer
+}
+.W .Tbbg .bbg .tool .gw{
+    float: left;
+    height: 100px;
+    width: 255px;
+    background-color:#43C8AC;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.W .Tbbg .bbg .tool .xz{
+    float: left;
+    height: 100px;
+    margin-left: 15px;
+    width: 255px;
+    background-color:#CFAE69;
+    text-align: center;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.W .Tbbg .bbg .tool a{
+    color: #ffffff;
+}
+
+.W .Tbbg .bbg .vd{
+    position: absolute;
+    left: 675px;
+    top: 0px;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    border-radius: 70px;
+    background:url("../image/vd20170704.png") no-repeat;
+    font-size: 50px;
+    text-align: center;
+    color: yellow;
+}
+.W .Tbbg .bbg .vd img{
+    width: 110px;
+    height: 110px;
+}
+
+.W .Tbbg .bbg .content{
+    width: 1000px;
+    height: 280px;
+    margin-top: 50px ;
+}
+
+.W .Tbbg .bbg .content span{
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.W .Tbbg .bbg .content .lbt{
+    float: left;
+    width: 312px;
+    height: 280px;
+    background-color: pink;
+    overflow: hidden;
+    position: relative;
+}
+.W .Tbbg .bbg .content .lbt ul{
+    position: absolute;
+    width: 1560px;
+    height: 280px;
+}
+.W .Tbbg .bbg .content .lbt ul li{
+    float: left;
+    height: 280px;
+    width: 312px;
+}
+.W .Tbbg .bbg .content .lbt .box{
+    position: absolute;
+    left:150px;
+    top: 250px;
+    width: 100px;
+    height: 30px;
+}
+.W .Tbbg .bbg .content .lbt .box li{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 5px;
+    background: #43c8ac;
+}
+.W .Tbbg .bbg .content .lbt .box  .current{
+    background-color:yellow;
+}
+.W .Tbbg .bbg .list{
+    width: 1000px;
+    height: 105px;
+    margin-top: 30px ;
+    cursor:pointer
+}
+
+.W .Tbbg .bbg .list li{
+    float: left;
+    width: 233px;
+    height: 105px;
+    margin-right: 22px;
+    background-color:#1C1C1C;
+    position: relative;
+}
+
+.W .Tbbg .bbg .list li .or{
+    display: block;
+    position: absolute;
+    top: 19px;
+    left:25px;
+    font-size: 22px;
+}
+.W .Tbbg .bbg .list li .or a{
+    color: orange;
+}
+.W .Tbbg .bbg .list li .txt{
+    display: block;
+    position: absolute;
+    top: 45px;
+    left:25px;
+    color: #AAAA8A;
+}
+
+.W .Tbbg .bbg .list li img{
+    display: block;
+    position: absolute;
+    top: 32px;
+    left:159px;
+}
+.W .Tbbg .bbg .list li .yx{
+    display: block;
+    position: absolute;
+    top: 100px;
+    height: 5px;
+    width: 233px;
+    background-color: orange;
+}
+.W .Tbbg .bbg .list li .yx{
+    display: none;
+}
+
+.W .Tbbg .bbg .list li:last-child{
+    margin-right:0;
+}
+/*大背景结束*/
+
+/*小背景开始*/
+.W .Tsbg{
+    height: 514px;
+    background:url("../image/bg2-20160419.jpg") no-repeat;
+}
+
+
+.W .Tsbg .sbg{
+    height: 514px;
+    overflow: hidden;
+}
+
+.W .Tsbg .sbg .title{
+    margin-top: 24px;
+    height: 140px;
+    line-height: 140px;
+    width: 1000px;
+}
+
+
+.W .Tsbg .sbg .title .bl{
+    display: block;
+    float: left;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+.W .Tsbg .sbg .title .gr{
+    display: block;
+    float: left;
+    font-size: 40px;
+    color: #2FC3A3;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.W .Tsbg .sbg ul{
+    width: 1000px;
+    height: 291px;
+    background:url("../image/shendao.jpg");
+    cursor:pointer
+}
+.W .Tsbg .sbg li{
+    float: left;
+    height: 291px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+}
+
+.W .Tsbg .sbg li .sz{
+    position: absolute;
+    left: 81px;
+    top: 76px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    font-size: 25px;
+}
+
+.W .Tsbg .sbg li .hh{
+    display: block;
+    position: absolute;
+    top: 160px;
+    font-size: 22px;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+}
+
+.W .Tsbg .sbg li .yf{
+    display: block;
+    position: absolute;
+    top: 132px;
+    font-size: 22px;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+}
+
+.W .Tsbg .sbg li a{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 13px;
+    background-color: #3ED2B2;
+    color: #fff;
+}
+
+.W .Tsbg .sbg li .current{
+    background-color: black;
+}
+
+/*小背景结束*/
+
+
+/*音频设置开始*/
+.move{
+    position: absolute;
+    left: 330px;
+    top: 40px;
+    display: none;
+}
+/*音频设置结束*/
+
+
+/*固定块开始*/
+.W .fixf{
+    width: 130px;
+    height: 370px;
+    position: fixed;
+    right: 35px;
+    top:220px;
+
+}
+.W .fixf .top{
+    height: 52px;
+    width: 130px;
+    background-color: #3ED2B2;
+    overflow: hidden;
+}
+
+.W .fixf .top .text1{
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    height: 13px;
+    line-height: 13px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+}
+.W .fixf .top .text2{
+    margin-top: 4px;
+    display: block;
+    text-align: center;
+    height: 13px;
+    line-height: 13px;
+    font-size: 13px;
+    color: #fff;
+}
+.W .fixf .middle img{
+    width: 130px;
+    height: 135px;
+}
+
+.W .fixf .foot{
+    margin-top: 4px;
+    height: 110px;
+}
+.W .fixf .foot li{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background-color: #2C2C2C;
+    color: #C2C2C2;
+    font-size: 14px;
+    font-weight: bold;
+}
+.W .fixf .foot li:last-child{
+    border-bottom: 0px;
+}
+
+.W .fixf .footer{
+    margin-top: 0px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #3ED2B2;
+    width: 130px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.W .fixf .footer1{
+    height: 36px;
+    line-height: 36px;
+    background-color: #CFAE69;
+    width: 130px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.W .fixt{
+    width: 105px;
+    height: 55px;
+    position: fixed;
+    right: 0px;
+    top:900px;
+    background:url("../image/ost-bg.png")0 -160px no-repeat;
+}
+
+
+
+
+
+

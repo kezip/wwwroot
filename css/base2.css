@@ -1,0 +1,48 @@
+/*天刀初始化*/
+*{
+	margin:0;
+	padding:0;
+}
+i,b,em,u {
+	font-style: normal ;
+}
+img,input,button {
+	border:none;
+	outline-style: none;  /*外面环绕线*/
+}
+ul,ol {
+	list-style: none;  /*去掉小黑点*/
+}
+img {
+	vertical-align: middle;
+	border: 0 ;
+}
+table {
+	border-collapse:collapse; /*合并外边线*/
+}
+body {
+	font:12px/150% "microsoft yahei";
+	color: #666 ;
+	background-color: #F6F6F6 ;
+}
+.clearfix:after {
+	content: "" ;
+	display: table; /*此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+a {
+	color: #666 ;
+	text-decoration: none ; 
+}
+a:hover {
+	color: #C81623;
+}
+
+.w {
+    /*版心 提取 */
+    width: 1217px;
+    margin: 0 auto;
+}

@@ -1,0 +1,550 @@
+/*页面样式*/
+	body {
+		background:url("../image2/bgc.jpg") no-repeat center 0;
+	}
+/*顶部通栏的开始*/
+	.top {
+		height: 40px;
+		background-color: #fff;
+		border-bottom:#e4e7ea 1px solid;
+	}
+	.top .grow {
+		float: right;
+		margin-right: 117px;
+	}
+	.top .grow a {
+		float: left;
+		line-height: 40px;
+		margin-left: 27px;
+		font-size: 13px;
+	}
+/*顶部通栏的结束*/
+/* 进入官网的开始*/
+	.enter {
+		height: 383px;
+		margin-top: 5px;
+	}
+	.enter .inter a {
+		height: 37px;
+		width: 86px;
+		float: right;
+		background:url('../image2/img_1.png');
+	}
+/*下来排行榜的开始*/
+	.enter .inter {
+		position: relative;
+		top: 0;
+		right: 0;
+	}
+	.enter .inter .tream {
+		width: 702px;
+		height:460px;
+		background-color: pink ;
+		/*float: right;
+		margin-top: 0 ;
+		margin-right:0 ;*/
+		display:none; 
+		position: absolute;
+		top: 0;
+		right: 120px;
+	}
+/* 进入官网的结束*/
+/*中间头部的开始*/
+	.head {
+		height: 363px;
+		width: 1216px;
+		margin-bottom: 15px;
+	}
+/*头部游戏下载开始*/
+	.load {
+		width: 200px;
+		height: 542px;
+		float: left;
+		background-color:#fcfcfa ;
+		margin-right: 15px;
+	}
+	.load-top {
+		height: 106px;
+		line-height: 106px;
+		text-align: center;
+		font-size: 24px;
+	}
+	.head .load .load-top a {
+		float: left;
+		height: 106px;
+		width: 202px;
+		background:url("../image2/img2.jpg") no-repeat;
+	}
+/*列表的开始*/
+	.load .a a {
+			width: 100px;
+			height: 72px;
+			font-size: 16px;
+			line-height: 72px;
+			text-align: center;
+			float: left;
+			background:url("../image2/img_7.png") 0 -10px no-repeat;
+		}
+		.load ul .last {
+			border-right: 1px solid #dbdbdb;
+		}
+/*列表的结束*/
+	.left {
+		width: 252px;
+		height: 363px;
+		float: left;
+		margin-right: 15px;
+	}
+	.mid {
+		width: 325px;
+		height: 363px;
+		float: left;
+
+	}
+	.top1 {
+		width: 325px;
+		height: 150px;
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 15px ;
+	}
+	.l-bottom {
+		width: 155px;
+		height: 201px;
+		float: left;
+		margin-right: 15px;
+	}
+	.r-bottom {
+		width: 155px;
+		height: 201px;
+		float: left;
+	}
+/*综合资讯 新闻的开始*/
+	.news {
+		width: 390px;
+		height: 363px;
+		float: right;
+		background-color: #fff ;
+	}
+	.news .news-l {
+			height: 60px;
+			line-height: 60px;
+			font-size: 30px;
+			color: #45c7ac ;
+			padding-left: 20px;
+	}
+	.news .news-l .i {
+		font-size: 13px;
+		color: #cbcbcb ;
+		
+	}
+	.news .news-l .i1 {
+		font-size: 20px;	
+	}
+/*文本列表综合资讯开始*/
+	.news .news-l .news2 {
+		margin-top: -8px;
+	}
+	.news .news-l .news2 li {
+		font-size: 13px;
+		height: 30px;
+		line-height: 30px;	
+	}
+
+	.news .news-r ul {
+		float: right;
+		margin-top: -32px;
+		margin-right:13px;
+	}
+	.news .news-r li{
+		height: 30px;
+		line-height: 30px;
+	} 
+	.news .news-r ul a {
+		font-size: 16px;
+		color:#45c7ac ;
+	}
+/*中间头部的结束*/
+/*话本攻略的开始*/
+	.raiders  {
+		width: 588px;
+		height: 450px;
+		/*background-color: purple ;*/
+		float: left;
+		position: relative;
+		top:0;
+		left: 0 ;
+	}
+/*新手指南开始*/
+	.raiders .cainiao {
+
+		position: absolute;
+		width: 202px;
+		height: 352px;
+		/*background:url("../image2/img_8.jpg");*/
+		top: 160px;
+		left:-214px;
+	}
+	.raiders .cainiao a {
+	
+		width: 100px;
+		height: 117px;
+		float: left;
+		background:url("../image2/img_8.jpg") no-repeat;
+	}
+	.raiders .r-top {
+		width: 590px;
+		height: 182px;
+		background-color:#fff;
+		float: left;
+		margin-bottom: 15px;
+		padding-left: 20px;
+	}
+/*血战苍梧城开始*/
+	.raiders .r-top .rt {
+		height: 50px;
+		font-size: 31px;
+		line-height: 50px;
+		color:#45c7ac; 
+	}
+	.raiders .r-top .rt a {
+		font-size: 15px;
+		color:#45c7ac;
+		float: right; 
+		margin-right: 40px;
+	}
+	.raiders .r-top .rt i {
+		font-size: 13px;
+		color: #dddddd ;
+	}
+	.raiders .r-top ul li {
+		height: 38px;
+		line-height: 38px;
+		float: left;
+		margin-right: 30px ;
+	}
+	.raiders .r-top ul li a {
+		font-size: 13px ;
+		color: #000;
+	}
+/*漫画小说的开始*/
+	.raiders  .r-bottom{
+		width: 590px;
+		height: 256px;
+		background-color:#fff;
+		float: left;
+	}
+	.raiders .r-bottom .story {
+		margin-top: 20px;
+		margin-left:20px;
+		width: 373px;
+		float: left;
+	}
+	.raiders .r-bottom .story .rb1 {
+		margin-top: 11px;
+	}
+	.raiders .r-bottom .story .rb1 i {
+		margin-right:24px;
+		float: right;
+	}
+	.raiders .r-bottom .story .rb i {
+		font-size: 13px;
+		color: #bababa ;
+	}
+	.raiders .r-bottom .story .rb {
+		font-size: 30px;
+		color:#45c7ac; 
+
+	}
+	.raiders .r-bottom .story li {
+		height: 31px;
+		line-height: 31px;
+		font-size: 13px;
+		color: #000;
+	}
+/*印象微影的开始*/
+	.raiders  .r-bottom .more1 {
+		width: 192px;
+		height: 256px;
+		float:right;
+	}
+	.raiders  .r-bottom .more1 a {
+		height: 15px;
+		width:30px;
+		display: block;
+		font-size: 15px;
+		color:#45c7ac; 
+		padding-top: 34px;
+		padding-left:143px ;
+
+	}
+	.raiders  .r-bottom .more1 img {
+		height: 75px;
+		width: 173px;
+		margin-top:20px;
+	}
+/*话本攻略的结束*/
+/*特色栏目的开始*/
+	.features {
+		width: 390px;
+		height: 454px;
+		background-color: #fff ;
+		float: right;
+	}
+	.features .feat {
+		height: 50px;
+		width: 390px;
+		line-height: 50px;
+		color: pink ;
+		margin-bottom:10px;
+		margin-left: 20px;
+	}
+	.features .feat b {
+		font-size: 30px;
+		color:#45c7ac; 
+	}
+	.features .feat i {
+		font-size: 13px;
+		color:#dddddd; 
+	}
+	.features .feat a {
+		font-size: 15px;
+		color:#45c7ac; 
+		float: right;
+		margin-right: 40px;
+	}
+	.features ul {
+		margin-left: 20px;
+	}
+
+	.features ul li {
+		height: 133px;
+		width: 165px;
+		float: left;
+		margin-right: 20px;
+	}
+	.features ul li a {
+	  height: 30px;
+	  line-height: 30px;
+	}
+/*特色栏目的结束*/
+/*门派指引的开始*/
+.guide {
+	width: 1000px;
+	height: 560px;
+	float: right;
+	margin-bottom: 50px ;
+	position: relative;
+
+
+}
+.guide .gtxt {
+	height: 69px;
+	line-height: 69px;
+	font-size: 30px;
+	color: #45c7ac ;
+	padding-left: 20px;
+}
+.guide .gtxt i {
+	font-size: 13px ;
+	color: #d4d4d4 ;
+}
+.guide .guideLeft {
+	width: 100px;
+	height: 470px;
+	float: left;
+	background-color: #fff;
+	padding-left: 20px ;
+	padding-top: 20px ;
+}
+.guide .guideLeft ul li {
+	margin-bottom: 13px;
+	width: 50px;
+	height: 50px;
+	background:url("../image2/sprite.jpg") no-repeat;
+}
+.guide .guideLeft ul .li1 {
+	
+	background:url("../image2/sprite.jpg") -63px 0 no-repeat;
+}
+/*神刀的开始*/
+	.guide .shendao {
+		width: 880px;
+		height: 490px;
+		background:url("../image2/shendaovk.png") right 0 no-repeat;
+		float: right;
+	}
+	.guide .shendao .one {
+		margin-top:30px;
+		width: 434px;
+		height: 67px;
+		background-color: #fff ;
+		font-size: 50px;
+		color: #45c7ac ;
+	}
+	.guide .shendao .two{
+		width: 433px;
+		height: 67px;
+		line-height: 67px;
+		color: #666767;
+	} 
+	.guide .shendao .two a {
+		background-color: #ff8f17 ;
+		color:#fff;
+		padding:1px 5px 1px 5px;
+	}
+	.guide .shendao .three {
+		height: 97px;
+		width: 450px;
+		margin-bottom: 20px;
+	}
+	.guide .shendao .three .dif {
+		height: 97px;
+		width: 280px;
+		font-size: 17px;
+		color: #6b6b6b ;
+		background-color: white ;
+	}
+	.guide .shendao .three .dif i {
+		font-size: 14px;
+	}
+	.guide .shendao .three .dif li {
+		float: left;
+		margin-right: 10px;
+		height: 22px;
+		width: 22px;
+		background:url("../image2/img18.png") no-repeat;
+	}
+	.guide .shendao .four {
+		height: 210px;
+		width: 450px;
+	/*	background-color: yellow  ;*/
+	}
+	.guide .shendao .four .f1 {
+		height: 25px;
+		width: 450px;
+		line-height: 25px;
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+	.guide .shendao .four .f1 img {
+		height: 25px;
+		width: 42px;
+		float: right;
+	}
+	.guide .shendao .four .f2 li {
+		height: 30px;
+		width: 450px;
+		line-height: 30px;
+		font-size: 13px;
+	}
+	.guide .shendao .four .f2 li i {
+		float: right;
+	}
+
+	.guide .pic {
+		height: 169px;
+		width: 200px;
+		position: absolute;
+		background-color: pink ;
+		top: 70px ;
+		left: -215px ;
+	}
+	.guide .pic .one {
+		height: 82px;
+		margin-bottom: 9px;
+	}
+	.guide .pic .two {
+		height: 82px;
+		margin-bottom: 0px;
+	}
+/*门派指引的结束*/
+/*身份玩法的开始*/
+	.play {
+		width: 1000px;
+		height: 415px;
+		/*background-color: pink ;*/
+		float: right;
+		margin-bottom: 70px ;
+	}
+	.play .playTop {
+		font-size: 30px;
+		line-height: 30px;
+		height: 30px;
+		margin-top:20px;
+		padding-left: 20px;
+		background-color: #fff;
+		color: #45c7ac ;
+	}
+	.play .playTop i {
+		font-size: 13px;
+		color:#dddddd ; 
+	}
+	.play .pic {
+		width: 130px;
+		height: 320px;
+		background:url("../image2/img_22.jpg") no-repeat;
+		float: left;
+		margin-top: 30px;
+	}
+/*心得的开始*/
+	.play .xinde {
+	width: 300px;
+	height: 320px;
+	background-color: purple ;
+	float: left;
+	margin-top: 30px;
+	}
+/*角色百叶窗的开始*/
+	.play .jiaose {
+		width: 530px;
+		height: 320px;
+		float: left;
+		margin-top: 30px;
+		background-color: #253131 ;
+	}
+/*身份玩法的结束*/
+  .space {
+  	height: 20px;
+  	width: 100%;
+  }
+/*底部公告开始*/
+	.ad {
+		height: 30px;
+		width: 100%;
+		float: right;
+		line-height: 30px;
+		background-color: #1e2628 ;
+		margin-bottom: 0 ;
+		color: #4f5f5f ;
+	}
+/*底部公告结束*/
+/*最底部开始*/
+	.foot {
+		height: 124px;
+		float: right;
+		width: 100%;
+		background-color:#263232;
+		margin-bottom: 0 ;
+	}
+	.foot .foot1 {
+		width: 740px;
+		height: 48px;
+		margin-left: 215px ;
+		margin-top: 33px;
+	}
+	.foot .foot1 .img {
+		float: left;
+		width: 234px;
+		height: 48px;
+		background:url("../image2/footerlogo.png") no-repeat;
+	}
+	.foot .foot1 .foot2 {
+		float: right;
+		width: 490px;
+		height: 41px;
+		border-left: 1px solid #596963;
+		color: #596963 ;
+		padding-left: 15px;
+		padding-top: 7px;
+	}

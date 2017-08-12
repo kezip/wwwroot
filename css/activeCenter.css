@@ -1,0 +1,579 @@
+/*js公用----------*/
+.select{
+    margin-left: 4px;
+    height: 84px;
+    width: 166px;
+    border:1px solid #cccccc;
+}
+.activeBox .w div .ghostGreen{
+    position: absolute;
+    height: 125px;
+    width: 300px;
+    bottom: -275px;
+    left: 5px;
+    background-color: rgba(47,195,162,0.9);
+}
+.selectSpanOrange{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 14px;
+    width: 14px;
+    color: white;
+    background-color: #ff4e00;
+    line-height: 14px;
+    text-align: center;
+}
+.selectSpanBlack{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 14px;
+    width: 14px;
+    color: #707e91;
+    border:1px solid #999999;
+    line-height: 14px;
+    text-align: center;
+}
+.newSpan{
+    position: absolute;
+    left: 1px;
+    color: white;
+    bottom: 1px;
+    width: 194px;
+    line-height: 28px;
+    background-color: #404040;
+    cursor: pointer;
+    z-index: 5;
+}
+.newImg{
+    position: absolute;
+    left: 0px;
+    height: 84px;
+    width: 196px;
+}
+/*js公用  */
+/*初始化*/
+a,p,span,ul,li,ol,img,button,body,i{
+    margin: 0;
+    padding: 0;
+}
+i{
+    font-style: normal;
+    color:#596963 ;
+    margin-left:8px;
+    margin-right: 8px;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-size: 12px;
+    background: url("../image/bdGirl.jpg") no-repeat top center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.w{
+    width: 1285px;
+    margin: 0 auto;
+}
+/*header开始*/
+.header{
+    position: relative;
+    width: 100%;
+    height: 38px;
+    border-bottom: 1px solid #e4e7ea;
+    background-color: white;
+}
+.header .defend{
+    position: absolute;
+    top: 0px;
+    right: 315px;
+    height: 38px;
+    line-height: 38px;
+}
+.header .rank{
+    position: absolute;
+    top: 0px;
+    right: 203px;
+    height: 38px;
+    line-height: 38px;
+}
+.header .rank .rankList{
+    position: absolute;
+    border: 1px solid black;
+    top: 15px;
+    right:-12px;
+    width: 8px;
+    height: 8px;
+    line-height: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.header .rank .gameList{
+    position: absolute;
+    padding-top: 17px;
+    display: none;
+    background-color: #fff;
+    top: 39px;
+    right: -20px;
+    width: 698px;
+    height: 439px;
+    border: 1px solid #000;
+    z-index: 2;
+}
+.header .rank .gameList .corner{
+    position: absolute;
+    transform: rotate(45deg);
+    top: -6px;
+    right: 5px;
+    height: 9px;
+    width: 9px;
+    border: 1px solid #000;
+}
+.header .rank .gameList .corner2{
+    position: absolute;
+    top: -1px;
+    right: 3px;
+    height: 10px;
+    width: 15px;
+    background-color: white;
+    z-index: 3;
+}
+.header .rank .gameList .show{
+    margin-top: -17px;
+    width: 700px;
+    height: 458px;
+}
+.header .rank .gameList .list1,
+.header .rank .gameList .list2,
+.header .rank .gameList .list3{
+	float: left;
+    width: 231px;
+    height: 422px;
+    margin-right: 0px;
+}
+.header .rank .gameList .list2{
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+.header .rank .gameList ul li{
+    position: relative;
+    font-size: 12px;
+    font-family: Arial;
+    padding-left: 30px;
+    line-height: 28px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.header .rank .gameList ul li:nth-child(1){
+    width: 212px;
+    padding-left: 0px;
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: 600;
+    line-height: 22px;
+}
+.header .rank .gameList ul li:nth-child(2){
+    padding-left: 0px;
+    line-height: 38px;
+    width: 212px;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: 微软雅黑;
+}
+.header .rank .gameList ul li:nth-child(1) a{
+    float: right;
+    font-weight: normal;
+}
+/*header结束*/
+/*introduce开始*/
+.introduce{
+    position: relative;
+    height: 375px;
+}
+.introduce .introduceList{
+    float: right;
+    width: 845px;
+    height: 375px;
+    padding-top:46px;
+}
+.introduce .introduceList ul{
+    margin-right: 33px;
+    float: left;
+}
+.introduce .introduceList ul li{
+    margin-bottom: 10px;
+}
+.introduce .introduceList ul li:nth-child(1){
+    font-size: 12px;
+}
+.introduce .introduceList ul li:nth-child(2){
+   font-size: 15px;
+    font-family: 楷体;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+.introduce .introduceList ul li:last-child{
+    margin-right: 0px;
+}
+.introduce  .adFont{
+    position: absolute;
+    background: url("../image/slogn-home.png") no-repeat;
+    width: 418px;
+    height: 116px;
+    bottom: 27px;
+    right: 0px;
+}
+/*.introduce .gameList{
+    position: absolute;
+    padding-top: 17px;
+    display: none;
+    background-color: #fff;
+    top: 0px;
+    right: 155px;
+    width: 698px;
+    height: 439px;
+    border: 1px solid #000;
+    z-index: 2;
+}
+.introduce .gameList .corner{
+    position: absolute;
+    transform: rotate(45deg);
+    top: -6px;
+    right: 5px;
+    height: 9px;
+    width: 9px;
+    border: 1px solid #000;
+}
+.introduce .gameList .corner2{
+    position: absolute;
+    top: -1px;
+    right: 3px;
+    height: 10px;
+    width: 15px;
+    background-color: white;
+    z-index: 3;
+}
+.introduce .gameList .show{
+    margin-top: -17px;
+    width: 700px;
+    height: 458px;
+}
+.introduce .gameList .list1,
+.introduce .gameList .list2,
+.introduce .gameList .list3{
+    width: 231px;
+    height: 422px;
+    margin-right: 0px;
+}
+.introduce .gameList .list2{
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+.introduce .gameList ul li{
+    position: relative;
+    font-size: 12px;
+    font-family: Arial;
+    padding-left: 30px;
+    line-height: 28px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.introduce .gameList ul li:nth-child(1){
+    width: 212px;
+    padding-left: 0px;
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: 600;
+    line-height: 22px;
+}
+.introduce .gameList ul li:nth-child(2){
+    padding-left: 0px;
+    line-height: 38px;
+    width: 212px;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: 微软雅黑;
+}
+.introduce .gameList ul li:nth-child(1) a{
+    float: right;
+    font-weight: normal;
+}*/
+/*introduce结束*/
+/*activity开始*/
+.activity{
+    position: relative;
+    height: 71px;
+    background-color: rgba(0,0,0,0.7);
+    margin-bottom: 15px;
+}
+
+.activity span:nth-child(1){
+    display: inline-block;
+    font-size: 35px;
+    line-height: 71px;
+    color: white;
+    margin-left: 27px;
+    font-family: 楷体;
+}
+.activity span:nth-child(2){
+     display: inline-block;
+     font-size: 35px;
+     line-height: 71px;
+     color: #555a5f;
+     margin-left: 6px;
+     margin-right: 6px;
+ }
+.activity span:nth-child(3){
+    display: inline-block;
+    font-size: 35px;
+    line-height: 71px;
+    color: #18ad8c;
+}
+.activity span:nth-child(4){
+    position: absolute;
+    left: 340px;
+    width: 125px;
+    line-height: 71px;
+    text-align: center;
+    background-color: #18ad8c;
+    color: white;
+    cursor: pointer;
+}
+.activity span:nth-child(5){
+    position: absolute;
+    left: 465px;
+    width: 125px;
+    line-height: 71px;
+    text-align: center;
+    cursor: pointer;
+}
+.activity span:nth-child(5):hover{
+    color: #18ad8c;
+}
+.activity span:nth-child(6){
+     position: absolute;
+     transform: rotate(45deg);
+     top: 50%;
+    right: 232px;
+     margin-top: -5px;
+     width:8px;
+     height: 8px;
+     border: 1px solid #33c4a4;
+}
+.activity ul{
+    position: absolute;
+    top: 0px;
+    right: 28px;
+    height: 71px;
+    line-height: 71px;
+
+}
+.activity ul li{
+    float: left;
+    margin-right: 5px;
+    color: #bbbbbb;
+    height: 71px;
+    line-height: 71px;
+}
+.activity ul li a{
+    color: #bbbbbb;
+}
+/*activity结束*/
+/*activeBox开始*/
+.activeBox{
+    position: relative;
+    height: 1455px;
+}
+.activeBox .w div{
+    float: left;
+    height: 135px;
+    width: 310px;
+    background-color: white;
+    padding-top: 135px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.activeBox .w .div4,
+.activeBox .w .div8,
+.activeBox .w .div12,
+.activeBox .w .div16,
+.activeBox .w .div20{
+    margin-right: 0px;
+}
+.activeBox .w div span{
+    position: relative;
+    display: block;
+    height: 110px;
+    width: 310px;
+    background-color: white;
+    padding-top: 25px;
+}
+.activeBox .w div span a{
+    display: block;
+    margin-left: 23px;
+}
+
+.activeBox .w div span a:nth-child(1){
+    display: block;
+    margin-left: 23px;
+    font-size: 17px;
+    color:#01a89a
+}
+.activeBox .w div span a:nth-child(2){
+    display: block;
+    margin-left: 23px;
+    height: 25px;
+    line-height: 25px;
+    color: #c4bbcd;
+}
+.activeBox .w .div{
+    background-color: white;
+}
+.activeBox .w .div1{
+    background: url("../image/ych21.jpg") no-repeat top center;
+}
+.activeBox .w .div2{
+    background: url("../image/ych8.jpg") no-repeat top center;
+}
+.activeBox .w .div3{
+    background: url("../image/ych14.jpg") no-repeat top center;
+}
+.activeBox .w .div4{
+    background: url("../image/ych17.jpg") no-repeat top center;
+}
+.activeBox .w .div5{
+    background: url("../image/ych20.jpg") no-repeat top center;
+}
+.activeBox .w .div6{
+    background: url("../image/ych19.jpg") no-repeat top center;
+}
+.activeBox .w .div7{
+    background: url("../image/ych18.jpg") no-repeat top center;
+}
+.activeBox .w .div8{
+    background: url("../image/ych16.jpg") no-repeat top center;
+}
+.activeBox .w .div9{
+    background: url("../image/ych15.jpg") no-repeat top center
+}
+.activeBox .w .div10{
+    background: url("../image/ych13.jpg") no-repeat top center;
+}
+.activeBox .w .div11{
+    background: url("../image/ych12.jpg") no-repeat top center;
+}
+.activeBox .w .div12{
+    background: url("../image/ych11.jpg") no-repeat top center;
+}
+.activeBox .w .div13{
+    background: url("../image/ych24.jpg") no-repeat top center;
+}
+.activeBox .w .div14{
+    background: url("../image/ych8.jpg") no-repeat top center;
+}
+.activeBox .w .div15{
+    background: url("../image/ych7.jpg") no-repeat top center;
+}
+.activeBox .w .div16{
+    background: url("../image/ych6.jpg") no-repeat top center;
+}
+.activeBox .w .div17{
+    background: url("../image/ych5.jpg") no-repeat top center;
+}
+.activeBox .w .div18{
+    background: url("../image/ych4.jpg") no-repeat top center;
+}
+.activeBox .w .div19{
+    background: url("../image/ych2.jpg") no-repeat top center;
+}
+.activeBox .w .div20{
+    background: url("../image/ych1.jpg") no-repeat top center;
+}
+/*activeBox结束*/
+
+/*warning开始*/
+.warning{
+    height: 53px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: #1e2628;
+    text-align: center;
+}
+.warning .age,
+.warning .placard{
+    height: 22px;
+    line-height: 22px;
+    color: #4f5f5f;
+    text-align: center;
+}
+.warning .age .ageRed{
+    color: red;
+}
+/*warning结束*/
+
+/*base开始*/
+.base{
+    background-color: #242f2f;
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+.base .txImg{
+    position: absolute;
+    top: 32px;
+    left: 205px;
+    background:url("../image/nav-copy.png") no-repeat -1520px  5px;
+    width: 270px;
+    height: 45px;
+}
+.base .txImg a{
+    display: block;
+    width: 270px;
+    height: 45px;
+}
+.base .links{
+    position: absolute;
+    padding-top: 8px;
+    padding-left: 15px;
+    left: 482px;
+    top: 35px;
+    border-left: 1px solid #596963;
+    height: 80px;
+    width: 660px;
+}
+.base .links span:nth-child(2){
+    display: block;
+    line-height: 23px;
+    color: #596963;
+}
+.base .links span:nth-child(3),
+.base .links span:nth-child(4){
+    display: block;
+    line-height: 19px;
+    color: #596963;
+}
+.base .links span a{
+    line-height: 19px;
+    color: #596963;
+}
+/*base结束*/
+
+/*logoFont开始*/
+.logoFont{
+    position: absolute;
+    height: 67px;
+    width: 191px;
+    top: 68px;
+    left: 28px;
+}
+.logoFont a{
+    display: block;
+    height: 67px;
+    width: 191px;
+    background: url("../image/nav-copy.png") no-repeat;
+
+}
+/*logoFont结束*/

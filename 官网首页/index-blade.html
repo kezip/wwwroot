@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>天涯明月刀-官网首页</title>
+    <link rel="stylesheet" href="css/index-blade.css"/>
+    <link rel="stylesheet" href="css/index2.css"/>
+    <script src='js/jquery-1.12.4.min.js'></script>
+    <script src='js/index.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/yuyongxin.css"/>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+    <script type="text/javascript" src="js/animate.js"></script>
+
+    <style>
+        .kj-box {
+            width: 1280px;
+            height: 315px;
+            position: relative;
+            background-color: #e6ecea;
+            /*margin-top: 15px;*/
+            margin: 15px auto;
+        }
+
+        /*left部分开始*/
+        .kj-left {
+            width: 186px;
+            height: 300px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .kj-left div {
+            float: left;
+            width: 93px;
+            height: 100px;
+            background-color:#363636;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kj-left div a img {
+            /*display: block;*/
+            margin-top: 16px;
+            margin-left: 26px;
+            /*position: absolute;*/
+            z-index: 1;
+        }
+    
+        .kj-left div a span {
+            /*display:block;*/
+            width: 93px;
+            text-align: center;
+            color: #d4d4d4;
+            position: absolute;
+            top: 64px;
+            z-index: 3;
+            left: 0;
+        }
+
+        .kj-left div .mo {
+            /*display: inline-block;*/
+            width: 93px;
+            position: absolute;
+            height: 100px;
+            z-index: 2;
+            background-color:#cfae69;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /*left部分结束*/
+
+        /*right部分开始*/
+        .kj-right {
+            width: 265px;
+            height: 300px;
+            background-color: white;
+            float: right;
+            margin-left: 15px;
+            overflow: hidden;
+        }
+
+        .kj-right .kj-posi {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .kj-right .kj-posi .rtop {
+            height: 36px;
+        }
+
+        .kj-right .kj-posi .rtop ul {
+            margin-left: 18px;
+            margin-top: 16px;
+        }
+
+        .kj-right .kj-posi .rtop ul li {
+            cursor: pointer;
+            float: left;
+            margin-right: 3px;
+        }
+
+        .kj-right .kj-posi .rle {
+            width: 150px;
+            height: 239px;
+            left: 18px;
+            top: 45px;
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .kj-right .kj-posi .rle h3 {
+            color: #2fc3a2;
+            font-size: 37px;
+            line-height: 37px;
+            font-weight: 600;
+            /*margin-bottom: 12px;*/
+        }
+
+        .kj-right .kj-posi .rle .marg {
+            margin-top: 16px;
+            margin-bottom: 18px;
+        }
+
+        .kj-right .kj-posi .rle ul {
+            width: 150px;
+            height: 20px;
+            margin-top: 4px;
+            /*background-color: yellow;*/
+        }
+
+        .kj-right .kj-posi .rle ul li {
+            /*float: left;*/
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #c3c3c3;
+            transform: rotate(45deg);
+            margin-right: 3px;
+        }
+
+        .kj-right .kj-posi .rle .margb {
+            margin-top: 12px;
+        }
+
+        .kj-right .kj-posi .rle1 {
+            width: 150px;
+            height: 239px;
+            left: -150px;
+            top: 45px;
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .kj-right .kj-posi .rle1 h3 {
+            color: #2fc3a2;
+            font-size: 37px;
+            line-height: 37px;
+            font-weight: 600;
+            /*margin-bottom: 12px;*/
+        }
+
+        .kj-right .kj-posi .rle1 .marg {
+            margin-top: 16px;
+            margin-bottom: 18px;
+        }
+
+        .kj-right .kj-posi .rle1 ul {
+            width: 150px;
+            height: 20px;
+            margin-top: 4px;
+            /*background-color: yellow;*/
+        }
+
+        .kj-right .kj-posi .rle1 ul li {
+            /*float: left;*/
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #c3c3c3;
+            transform: rotate(45deg);
+            margin-right: 3px;
+        }
+
+        .kj-right .kj-posi .rle1 .margb {
+            margin-top: 12px;
+        }
+
+        .kj-right .kj-posi .rle2 {
+            width: 150px;
+            height: 239px;
+            left: -150px;
+            top: 45px;
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .kj-right .kj-posi .rle2 h3 {
+            color: #2fc3a2;
+            font-size: 37px;
+            line-height: 37px;
+            font-weight: 600;
+            /*margin-bottom: 12px;*/
+        }
+
+        .kj-right .kj-posi .rle2 .marg {
+            margin-top: 16px;
+            margin-bottom: 18px;
+        }
+
+        .kj-right .kj-posi .rle2 ul {
+            width: 150px;
+            height: 20px;
+            margin-top: 4px;
+            /*background-color: yellow;*/
+        }
+
+        .kj-right .kj-posi .rle2 ul li {
+            /*float: left;*/
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #c3c3c3;
+            transform: rotate(45deg);
+            margin-right: 3px;
+        }
+
+        .kj-right .kj-posi .rle2 .margb {
+            margin-top: 12px;
+        }
+
+        .kj-right .kj-posi .rle3 {
+            width: 150px;
+            height: 239px;
+            left: -150px;
+            top: 45px;
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .kj-right .kj-posi .rle3 h3 {
+            color: #2fc3a2;
+            font-size: 37px;
+            line-height: 37px;
+            font-weight: 600;
+            /*margin-bottom: 12px;*/
+        }
+
+        .kj-right .kj-posi .rle3 .marg {
+            margin-top: 16px;
+            margin-bottom: 18px;
+        }
+
+        .kj-right .kj-posi .rle3 ul {
+            width: 150px;
+            height: 20px;
+            margin-top: 4px;
+            /*background-color: yellow;*/
+        }
+
+        .kj-right .kj-posi .rle3 ul li {
+            /*float: left;*/
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #c3c3c3;
+            transform: rotate(45deg);
+            margin-right: 3px;
+        }
+
+        .kj-right .kj-posi .rle3 .margb {
+            margin-top: 12px;
+        }
+
+        .kj-right .kj-posi .rle4 {
+            width: 150px;
+            height: 239px;
+            left: -150px;
+            top: 45px;
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .kj-right .kj-posi .rle4 h3 {
+            color: #2fc3a2;
+            font-size: 37px;
+            line-height: 37px;
+            font-weight: 600;
+            /*margin-bottom: 12px;*/
+        }
+
+        .kj-right .kj-posi .rle4 .marg {
+            margin-top: 16px;
+            margin-bottom: 18px;
+        }
+
+        .kj-right .kj-posi .rle4 ul {
+            width: 150px;
+            height: 20px;
+            margin-top: 4px;
+            /*background-color: yellow;*/
+        }
+
+        .kj-right .kj-posi .rle4 ul li {
+            /*float: left;*/
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #c3c3c3;
+            transform: rotate(45deg);
+            margin-right: 3px;
+        }
+
+        .kj-right .kj-posi .rle4 .margb {
+            margin-top: 12px;
+        }
+
+        .kj-right .kj-posi .rri {
+            right: 0;
+            top: 18px;
+            position: absolute;
+            z-index: 1;
+        }
+        /*right部分结束*/
+
+        /*li标签重灾区开始*/
+        .kj-li {
+            width: 393px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .kj-li .li-top {
+            float: left;
+            width: 353px;
+            height: 44px;
+            margin-top: 14px;
+            margin-left: 20px;
+            border-bottom: 1px solid;
+            border-bottom-color: #cccccc;
+
+        }
+
+        .kj-li .li-top ul {
+            float: left;
+            line-height: 44px;
+            font-size: 10px;
+        }
+
+        .kj-li .li-top ul li{
+            float: left;
+            width: 50px;
+            height: 43px;
+            text-align: center;
+
+        }
+
+        .kj-li .li-top ul a li:hover {
+            color: #2fc3a2;
+        }
+
+        .kj-li .li-top span a {
+            font-size: 12px;
+            line-height: 44px;
+            color: #b9c1d2;
+            height: 44px;
+            float: right;
+        }
+
+        .kj-li .li-bottom {
+            float: left;
+            margin-top: 18px;
+            margin-left: 26px;
+        }
+
+        .kj-li .li-bottom ul {
+            display: none;
+        }
+
+        .kj-li .li-bottom .kj-show {
+            display: block;
+        }
+
+        .kj-li .li-bottom .first {
+            color: #767676;
+        }
+
+        .kj-li .li-bottom .time {
+            color: #b1b1b1;
+            float: right;
+        }
+
+        .kj-li .li-bottom li {
+            margin-bottom: 8px;
+            width: 353px;
+            display: inline-block;
+        }
+            /*li标签重灾区结束*/
+
+        .kj-sport {
+            width: 391px;
+            height: 143px;
+            /*background-color: hotpink;*/
+            float: left;
+            margin-bottom: 15px;
+        }
+
+        /*游戏特色开始*/
+        .kj-style {
+            width: 189px;
+            height: 142px;
+            background-color: white;
+            float: left;
+            margin-right: 13px;
+        }
+
+        .kj-style a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .kj-style a .spand {
+            width: 108px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 21px;
+        }
+
+        .kj-style a .spand .i1 {
+            font-size: 24px;
+            color: #d2ae69;
+        }
+
+        .kj-style a .spand .i2 {
+            margin-top: 13px;
+            float: left;
+            margin-bottom: 10px;
+            width: 100px;
+            color: black;
+        }
+
+        .kj-style a img {
+            float: right;
+        }
+
+        .kj-style a .spand img {
+            float: left;
+        }
+        /*游戏特色结束*/
+
+        /*游戏设定开始*/
+        .kj-set {
+            width: 189px;
+            height: 142px;
+            background-color: white;
+            float: left;
+        }
+
+        .kj-set a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .kj-set a .spand {
+            width: 80px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 21px;
+        }
+
+        .kj-set a .spand .i1 {
+            font-size: 24px;
+            color: #d2ae69;
+        }
+
+        .kj-set a .spand .i2 {
+            margin-top: 13px;
+            float: left;
+            margin-bottom: 10px;
+            width: 80px;
+            color: black;
+        }
+
+        .kj-set a img {
+            float: right;
+        }
+
+        .kj-set a .spand img {
+            float: left;
+        }
+        /*游戏设定结束*/
+    </style>
+</head>
+<body>
+    <!-- blade-top开始-->
+    <div id="blade-d">
+        <div class="blade-d-bottom w" id="blade-d-bottom">
+            <ul class='left'>
+                <li><a href="#"></a></li>
+                <li>
+                    <a href="#"><img src="images/533142709922444202149915041323040.1499150415.dcd134f4e3111ad67a4514bb7bdf78ab.jpg" alt=""></a>
+                    <div><img src="images/12777.jpg" alt=""></div>
+                </li>
+            </ul>
+            <ul class='right'>
+                <li><a href="#"><img src="images/logo.png" alt="">成长守护平台</a></li>
+                <li>
+					<a href="#">腾讯游戏排行榜<span></span>
+						
+					</a>
+				</li>
+            </ul>
+        </div>
+    </div>
+    <!-- blade-top结束-->
+    <!-- navigation开始-->
+    <div class="navigation w" id="navigation">
+        <div id="navigation-top-left">
+			<a href="../index.html" style="position:absolute;width:193px;height:68px"></a>
+		</div>
+         <div id="navigation-top-right">
+            <a href="#"></a>     
+        </div> 
+        <div id="navigation-top-right-b">
+            <ul class='ul1'>
+                <li><a href="#"></a></li>
+                <li><a href="#">公告</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">活动</a></li>
+                <li><a href="#">媒体</a></li>
+                <li><a href="#">攻略</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">客栈</a></li>
+            </ul>
+            <ul class='ul2'>
+                <li><a href="#"></a></li>
+                <li><a href="#">新手指南</a></li>
+                <li><a href="#">游戏特色</a></li>
+                <li><a href="#">世界背景</a></li>
+                <li><a href="#">门派介绍</a></li>
+                <li><a href="#">身份介绍</a></li>
+                <li><a href="#">设定站</a></li>
+                <li><a href="#">公子羽主题站</a></li>
+            </ul>
+            <ul class='ul3'>
+                <li><a href="#"></a></li>
+                <li><a href="#">游戏下载</a></li>
+                <li><a href="#">硬件配置</a></li>
+                <li><a href="#">服务器状态</a></li>
+                <li><a href="#">精英服招募</a></li>
+            </ul>
+            <ul class='ul4'>
+                <li><a href="#"></a></li>
+                <li><a href="#">活动中心</a></li>
+                <li><a href="#">版本中心</a></li>
+                <li><a href="#">天积系统</a></li>
+                <li><a href="#">微博微信</a></li>
+                <li><a href="#">官方论坛</a></li>
+                <li><a href="#">官方同人站</a></li>
+            </ul>
+            <ul class='ul5'>
+                <li><a href="#"></a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">壁纸</a></li>
+                <li><a href="#">原画</a></li>
+            </ul>
+            <ul class='ul6'>
+                <li><a href="#"></a></li>
+                <li><a href="#">账号充值</a></li>
+                <li><a href="#">角色查询</a></li>
+                <li><a href="#">封停查询</a></li>
+                <li><a href="#">礼包兑换</a></li>
+                <li><a href="#">账号安全</a></li>
+            </ul>
+            <ul class='ul7'>
+                <li><a href="#"></a></li>
+                <li><a href="#">在线客服</a></li>
+                <li><a href="#">客服专区</a></li>
+                <li><a href="#">用户协议</a></li>
+                <li><a href="#">玩家条例</a></li>
+            </ul>
+        </div>
+        <div id="navigation-bottom">
+            <img src="images/slogan20170704.png" alt="">
+        </div>
+    </div>
+    <!-- navigation结束-->
+    <!-- ad开始-->
+    <div class="ad w" id="ad">
+        <div id="ad-left">
+            <div id="ad-leftTop">
+                <p><a href="#">游戏下载</a></p>
+                <span>DOWNLOAD</span>
+            </div>
+            <ul>
+                <li class='border-b'><a href="#">礼包兑换</a></li>
+                <li class='border-b'><a href="#">充值中心</a></li>
+                <li><a href="#">新手指南</a></li>
+            </ul>
+        </div>
+        <div id='ad-center'>
+            <ul id='c-img'>
+                <li><a href="#"><img src="images/1499916336.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499851180.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499744013.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1495889981.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499918375.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499918377.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499071951.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499715779367802027.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499715831812480417.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499715913507315878.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499674831437039665.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1500425877141322188.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1499930615.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1495889981.jpg" alt=""></a></li>
+            </ul>
+            <ul id='c-bottom'>
+                <li class='active'>7月15日整点在线</li>
+                <li>商城回馈</li>
+                <li>回流升级</li>
+                <li>八大活动来袭</li>
+                <li>沧海云帆版本专题</li>
+                <li>APP助手</li>
+                <li>天刀电视台</li>
+            </ul>
+            <ul id='c-bottom-t'>
+                <li>TGP助力江湖</li>
+                <li>会员助力江湖</li>
+                <li>腾讯动漫</li>
+                <li>腾讯视频</li>
+                <li>征途</li>
+                <li>道聚城助力</li>
+                <li>微信游戏圈上线</li>
+            </ul>
+            <ul id="c-top">
+                <li class='active'>官方</li>
+                <li>合作</li>
+            </ul>
+        </div>
+        <div id="ad-right">
+            <div class="ad-right-top">
+                <p>本周新区推荐</p>
+                <span>青龙永夜 时光沧海</span>
+            </div>
+            <a href="#"><img src="images/1499414734.jpg" alt=""></a>
+            <ul>
+                <li><a href="#">【商城上新】全新玄甲马具 圣绣-齐灵来袭</a></li>
+                <li><a href="#">【高能剧透】天刀全新史诗话本揭秘 珑铸及T3金装效果图曝光</a></li>
+                <li><a href="#">有爱同人，show出真我——天刀同人社区今日上线</a></li>
+                <li><a href="#">【天刀7.1公测】神刀再起 群侠共创国风</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="kj-box" id="kj-box">
+        <!--left部分开始-->
+        <div class="kj-left" id="kj-left">
+            <div>
+                <span class="mo"></span>
+                <a href="#"><img src="image/天涯明月刀资料.png" alt=""/><span>资料站</span></a>
+            </div>
+            <div>
+                <span class="mo"></span>
+                <a href="#"><img src="image/天涯明月刀攻略.png" alt=""/><span>攻略中心</span></a>
+            </div>
+            <div>
+                <span class="mo"></span>
+                <a href="#"><img src="image/天涯明月刀活动.png" alt=""/><span>活动中心</span></a>
+            </div>
+            <div>
+                <span class="mo"></span>
+                <a href="#"><img src="image/天涯明月刀版本.png" alt=""/><span>版本中心</span></a>
+            </div>
+            <div>
+                <span class="mo"></span>
+                <a href="#"><img src="image/天涯明月刀论坛.png" alt=""/><span>官方论坛</span></a>
+            </div>
+            <div>
+                <span class="mo"></span>
+                <a href="#"><img src="image/天涯明月刀微博.png" alt=""/><span>官方微博</span></a>
+            </div>
+        </div>
+        <!--left部分结束-->
+
+        <!--right部分开始-->
+        <div class="kj-right" id="kj-right">
+            <div class="kj-posi">
+                <div class="rtop" id="rtop">
+                    <ul>
+                        <li><img src="image/大刀3.png" alt=""/></li>
+                        <li><img src="image/单剑1.png" alt=""/></li>
+                        <li><img src="image/长枪1.png" alt=""/></li>
+                        <li><img src="image/扇子1.png" alt=""/></li>
+                        <li><img src="image/葫芦1.png" alt=""/></li>
+                    </ul>
+                </div>
+	            <span class="rle" id="rle">
+	                <h3>神刀</h3>
+	                <p>刀含杀气腾幽朔，萧飒寒芒泣鬼神</p>
+	                <p class="marg">
+                        <span>主武器:长刀</span>
+                        <br/>
+                        <span>副武器:鹰</span>
+                    </p>
+	                <p>
+                        <i>操作难度</i>
+                    </p>
+	                <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+	                <p class="margb">
+                        <a href="#">
+                            <span>详情介绍</span>
+                        </a>
+                        <a href="">
+                            <span>门派攻略</span>
+                        </a>
+                    </p>
+	            </span>
+	            <span class="rle1" id="rle1">
+	                <h3>太白</h3>
+	                <p>刀含杀气腾幽朔，萧飒寒芒泣鬼神</p>
+	                <p class="marg">
+                        <span>主武器:长刀</span>
+                        <br/>
+                        <span>副武器:鹰</span>
+                    </p>
+	                <p>
+                        <i>操作难度</i>
+                    </p>
+	                <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+	                <p class="margb">
+                        <a href="#">
+                            <span>详情介绍</span>
+                        </a>
+                        <a href="">
+                            <span>门派攻略</span>
+                        </a>
+                    </p>
+	            </span>
+	            <span class="rle2" id="rle2">
+	                <h3>神威</h3>
+	                <p>刀含杀气腾幽朔，萧飒寒芒泣鬼神</p>
+	                <p class="marg">
+                        <span>主武器:长刀</span>
+                        <br/>
+                        <span>副武器:鹰</span>
+                    </p>
+	                <p>
+                        <i>操作难度</i>
+                    </p>
+	                <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+	                <p class="margb">
+                        <a href="#">
+                            <span>详情介绍</span>
+                        </a>
+                        <a href="">
+                            <span>门派攻略</span>
+                        </a>
+                    </p>
+	            </span>
+	            <span class="rle3" id="rle3">
+	                <h3>唐门</h3>
+	                <p>刀含杀气腾幽朔，萧飒寒芒泣鬼神</p>
+	                <p class="marg">
+                        <span>主武器:长刀</span>
+                        <br/>
+                        <span>副武器:鹰</span>
+                    </p>
+	                <p>
+                        <i>操作难度</i>
+                    </p>
+	                <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+	                <p class="margb">
+                        <a href="#">
+                            <span>详情介绍</span>
+                        </a>
+                        <a href="">
+                            <span>门派攻略</span>
+                        </a>
+                    </p>
+	            </span>
+	            <span class="rle4" id="rle4">
+	                <h3>丐帮</h3>
+	                <p>刀含杀气腾幽朔，萧飒寒芒泣鬼神</p>
+	                <p class="marg">
+                        <span>主武器:长刀</span>
+                        <br/>
+                        <span>副武器:鹰</span>
+                    </p>
+	                <p>
+                        <i>操作难度</i>
+                    </p>
+	                <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+	                <p class="margb">
+                        <a href="#">
+                            <span>详情介绍</span>
+                        </a>
+                        <a href="">
+                            <span>门派攻略</span>
+                        </a>
+                    </p>
+	            </span>
+                <img src="image/大刀人物.png" alt="" class="rri" id="rri"/>
+            </div>
+        </div>
+        <!--right部分结束-->
+
+        <!--li标签重灾区开始-->
+        <div class="kj-li" id="kj-li">
+            <div class="li-top" id="li-top">
+                <ul id="top-ul">
+                    <a href="#" onclick="return false;"><li>头条</li></a>
+                    <a href="#" onclick="return false;"><li>新闻</li></a>
+                    <a href="#" onclick="return false;"><li>公告</li></a>
+                    <a href="#" onclick="return false;"><li>活动</li></a>
+                    <a href="#" onclick="return false;"><li>直播</li></a>
+                </ul>
+                <span><a href="#" onclick="return false;">更多+</a></span>
+            </div>
+            <div class="li-bottom" id="li-bottom">
+                <ul class="kj-show">
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                </ul>
+                <ul>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[2媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                </ul>
+                <ul>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[3媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                </ul>
+                <ul>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[4媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                </ul>
+                <ul>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                    <li><span class="first">[5媒体]</span>&nbsp;&nbsp;<span>迪玛希新歌《时光·沧海》首发 世界顶级"...</span><span class="time">07/11</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--li标签重灾区结束-->
+
+        <div class="kj-sport" id="kj-sport"><a href="#"><img src="image/home-event.jpg" alt=""/></a></div>
+
+        <!--游戏特色开始-->
+        <div class="kj-style" id="kj-style">
+            <a href="#">
+	            <span class="spand">
+	                <i class="i1">游戏特色</i>
+	                <span class="i2">江湖那么大 <br/>何处不天涯</span>
+	                <img src="image/天涯明月刀方块.png" alt=""/>
+	            </span>
+                <img src="image/天涯明月刀面具.png" alt=""/>
+            </a>
+        </div>
+        <!--游戏特色结束-->
+
+        <!--游戏设定开始-->
+        <div class="kj-set" id="kj-set">
+            <a href="#">
+	            <span class="spand">
+	                <i class="i1">设定站</i>
+	                <span class="i2">天下会盟 <br/>八荒剑秀</span>
+	                <img src="image/天涯明月刀方块.png" alt=""/>
+	            </span>
+                <img src="image/天涯明月刀书.png" alt=""/>
+            </a>
+        </div>
+        <!--游戏设定结束-->
+    </div>
+    <div class="yuyongxin w">
+        <div class="yu_left">
+            <ul class="yu_fnav">
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe68b;</i><span>天衣阁</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe62a;</i><span>同人站</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#x3442;</i><span>精英服</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe6a3;</i><span>道具城</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe644;</i><span>心悦特权</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe75a;</i><span>原生大碟</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe674;</i><span>账号安全</span></a>
+                </li>
+                <li class="yu_fnav_1">
+
+                    <a href="#" target="_blank"><i class="iconfont">&#xe618;</i><span>在线客服</span></a>
+                </li>
+            </ul>
+            <div class="yu_erweima">
+                <div class="yu_erweima_s">
+                    <span class="sp1" id="yu_tdzs">天刀助手</span>
+                    <i>|</i>
+                    <span id="yu_gfwx">官方微信</span>
+                </div>
+                <div class="yu_erweima_pic">
+                    <img src="images/wuxia-app-for-android.png" alt="" id="yu_img1" class="yu_img1"/>
+                    <img src="images/wuxia-ewm.png" alt="" id="yu_img2" class="yu_img2"/>
+                </div>
+            </div>
+            <div class="yu_lianjie">
+                <ul>
+                    <li><a href="#"><img src="images/mt-1.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images/mt-2.png" alt=""/></a></li>
+                    <li class="yu_tag1"><a href="#"><img src="images/mt-4.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images/mt-5.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images/mt-6.png" alt=""/></a></li>
+                    <li class="yu_tag1"><a href="#"><img src="images/mt-9.png" alt=""/></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="yu_tongrentuijian">
+            <div class="yu_news1">
+                <div class="yu_tongren_top1">
+                    <span>同人推荐</span>
+                    <a class="yu_a1" href="#">投稿参与</a>
+                    <a class="yu_a2" href="#">更多+</a>
+                </div>
+                <div class="yu_tongren_pic1">
+                    <a href="#"><img src="images/1499705850.jpg" alt=""/></a>
+                    <a href="#"><img class=yu_img3 src="images/1492741296.jpg" alt=""/></a>
+                </div>
+                <div class="yu_news1_text">
+                    <ul class="yu_news1_news">
+                        <li><a href="#">时光匆匆如流沙<span>07/14</span></a></li>
+                        <li><a href="#">辣么萌怪我喽《明月谱》29期<span>07/14</span></a></li>
+                        <li><a href="#">浪迹天涯十五话<span>07/14</span></a></li>
+                        <li><a href="#">天命风流醉千山<span>07/14</span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="yu_tongren_tu" >
+                <ul id="yu_tongren_tu">
+                    <li class="yu_tongrenvideo" >
+                        <div class="yu_tr_pic1">
+                        </div>
+                        <div class="yu_tr_news1">
+                            <div class="yu_tr_news_template">
+                                <div class="yu_tr_top_template">
+                                    <span>同人视频</span>
+                                    <a href="#" class="yu_a1_template">投稿参与</a>
+                                    <a href="#" class="yu_a2_template">更多+</a>
+                                </div>
+                                <div class="yu_tr_pic_template">
+                                    <a href="#"><img src="images/yu_1.jpg" alt=""/></a>
+                                    <a href="#"><img class="yu_img4" src="images/yu_2.png" alt=""/></a>
+                                </div>
+                                <div class="yu_tr_newlis_template">
+                                    <ul>
+                                        <li><a href="#">同人视频<span>07/21</span></a></li>
+                                        <li><a href="#">同人视频<span>07/21</span></a></li>
+                                        <li><a href="#">同人视频<span>07/21</span></a></li>
+                                        <li><a href="#">同人视频<span>07/21</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yu_tongrencos">
+                        <div class="yu_tr_pic2"></div>
+                        <div class="yu_tr_news2">
+                            <div class="yu_tr_news_template">
+                                <div class="yu_tr_top_template">
+                                    <span>同人COS</span>
+                                    <a href="#" class="yu_a1_template">投稿参与</a>
+                                    <a href="#" class="yu_a2_template">更多+</a>
+                                </div>
+                                <div class="yu_tr_pic_template">
+                                    <a href="#"><img src="images/yu_5.jpg" alt=""/></a>
+                                    <a href="#"><img class="yu_img4" src="images/yu_6.png" alt=""/></a>
+                                </div>
+                                <div class="yu_tr_newlis_template">
+                                    <ul>
+                                        <li><a href="#">同人cos<span>07/21</span></a></li>
+                                        <li><a href="#">同人cos<span>07/21</span></a></li>
+                                        <li><a href="#">同人cos<span>07/21</span></a></li>
+                                        <li><a href="#">同人cos<span>07/21</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yu_tongrenhuihua">
+                        <div class="yu_tr_pic3"></div>
+                        <div class="yu_tr_news3">
+                            <div class="yu_tr_news_template">
+                                <div class="yu_tr_top_template">
+                                    <span>同人绘画</span>
+                                    <a href="#" class="yu_a1_template">投稿参与</a>
+                                    <a href="#" class="yu_a2_template">更多+</a>
+                                </div>
+                                <div class="yu_tr_pic_template">
+                                    <a href="#"><img src="images/yu_7.jpg" alt=""/></a>
+                                    <a href="#"><img class="yu_img4" src="images/yu_12.png" alt=""/></a>
+                                </div>
+                                <div class="yu_tr_newlis_template">
+                                    <ul>
+                                        <li><a href="#">同人绘画<span>07/21</span></a></li>
+                                        <li><a href="#">同人绘画<span>07/21</span></a></li>
+                                        <li><a href="#">同人绘画<span>07/21</span></a></li>
+                                        <li><a href="#">同人绘画<span>07/21</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yu_tongrenxiaoshuo">
+                        <div class="yu_tr_pic4"></div>
+                        <div class="yu_tr_news4">
+                            <div class="yu_tr_news_template">
+                                <div class="yu_tr_top_template">
+                                    <span>同人小说</span>
+                                    <a href="#" class="yu_a1_template">投稿参与</a>
+                                    <a href="#" class="yu_a2_template">更多+</a>
+                                </div>
+                                <div class="yu_tr_pic_template">
+                                    <a href="#"><img src="images/yu_9.jpg" alt=""/></a>
+                                    <a href="#"><img class="yu_img4" src="images/yu_8.png" alt=""/></a>
+                                </div>
+                                <div class="yu_tr_newlis_template">
+                                    <ul>
+                                        <li><a href="#">同人小说<span>07/21</span></a></li>
+                                        <li><a href="#">同人小说<span>07/21</span></a></li>
+                                        <li><a href="#">同人小说<span>07/21</span></a></li>
+                                        <li><a href="#">同人小说<span>07/21</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yu_tongrenmusic">
+                        <div class="yu_tr_pic5"></div>
+                        <div class="yu_tr_news5">
+                            <div class="yu_tr_news_template">
+                                <div class="yu_tr_top_template">
+                                    <span>同人音乐</span>
+                                    <a href="#" class="yu_a1_template">投稿参与</a>
+                                    <a href="#" class="yu_a2_template">更多+</a>
+                                </div>
+                                <div class="yu_tr_pic_template">
+                                    <a href="#"><img src="images/yu_11.jpg" alt=""/></a>
+                                    <a href="#"><img class="yu_img4" src="images/yu_3.png" alt=""/></a>
+                                </div>
+                                <div class="yu_tr_newlis_template">
+                                    <ul>
+                                        <li><a href="#">同人音乐<span>07/21</span></a></li>
+                                        <li><a href="#">同人音乐<span>07/21</span></a></li>
+                                        <li><a href="#">同人音乐<span>07/21</span></a></li>
+                                        <li><a href="#">同人音乐<span>07/21</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tongrenzhoubian">
+                        <div class="yu_tr_pic6"></div>
+                        <div class="yu_tr_news6">
+                            <div class="yu_tr_news_template">
+                                <div class="yu_tr_top_template">
+                                    <span>同人周边</span>
+                                    <a href="#" class="yu_a1_template">投稿参与</a>
+                                    <a href="#" class="yu_a2_template">更多+</a>
+                                </div>
+                                <div class="yu_tr_pic_template">
+                                    <a href="#"><img src="images/yu_10.jpg" alt=""/></a>
+                                    <a href="#"><img class="yu_img4" src="images/yu_4.png" alt=""/></a>
+                                </div>
+                                <div class="yu_tr_newlis_template">
+                                    <ul>
+                                        <li><a href="#">同人周边<span>07/21</span></a></li>
+                                        <li><a href="#">同人周边<span>07/21</span></a></li>
+                                        <li><a href="#">同人周边<span>07/21</span></a></li>
+                                        <li><a href="#">同人周边<span>07/21</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="yu_ziyuan">
+            <ul>
+                <li class="yu_zy_tag1"><a href="#"><i class="iconfont">&#xe684;</i><span>视频</span></a></li>
+                <li class="yu_zy_tag2"><a href="#"><i class="iconfont">&#xe600;</i><span>壁纸</span></a></li>
+                <li class="yu_zy_tag3"><a href="#"><i class="iconfont">&#xe63f;</i><span>原画</span></a></li>
+                <li class="yu_zy_tag4"><a href="#"><i class="iconfont">&#xe74b;</i><span>音乐</span></a></li>
+            </ul>
+        </div>
+        <div class="yu_meiti">
+            <h2 class="yu_meiti_title1">媒体</h2>
+            <div class="yu_meiti_box1">
+                <div class="yu_meiti_box1_top1">
+                    <ul id="yu_ul1">
+                        <li class="yu_current1">全部</li>
+                        <li>多玩</li>
+                        <li>17173</li>
+                        <li>178</li>
+
+                    </ul>
+                    <a href="#">更多+</a>
+                    <em class="yu_meiti_box1_top1_line" id="yu_meiti_box1_top1_line"></em>
+                </div>
+                <div class="yu_meiti_box1_content1">
+                    <div class="yu_meiti_box_con_allnews" id="yu_meiti_box_con_allnews">
+                        <ul>
+                            <li><a href="#">迪玛希新歌《时光·沧海》首发 世界顶<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">剑荡八荒S4赛季六月开启 等你来战<span>07/11</span></a></li>
+                            <li><a href="#">【多玩】挑战开峰会八荒路小佳<span>07/11</span></a></li>
+                            <li><a href="#">【多玩】沧海云帆 天刀新版本内容攻略<span>07/11</span></a></li>
+                            <li><a href="#">【国风音绕】国风音绕决赛来袭 6月25日直播<span>07/11</span></a></li>
+                            <li><a href="#">【多玩】剑荡八荒S4线下赛冠亚军专访<span>07/11</span></a></li>
+                            <li><a href="#">【178】最贴地气的剑荡专访（五）<span>07/11</span></a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                            <li><a href="#">天刀全新副本开封会八荒BOSS详情首曝<span>07/11</span></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yu_gonglue">
+            <h2 class="yu_meiti_title1">攻略</h2>
+            <div class="yu_gonglue_box1">
+                <div class="yu_gonglue_box1_top1">
+                    <ul id="yu_ul2">
+                        <li class="yu_current2">话本</li>
+                        <li>论剑</li>
+                        <li>属性</li>
+                        <li>玩法</li>
+                    </ul>
+                    <a href="#">更多+</a>
+                    <em id="yu_gonglue_line2"></em>
+                </div>
+                <div class="yu_gonglue_box1_content1">
+                    <div class="yu_gonglue_b_con_allnews" id="yu_gonglue_b_con_allnews">
+                        <ul>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/30</span></a></li>
+                            <li><a href="#">天刀团队副本回顾系列之苍梧城<span>03/30</span></a></li>
+                            <li><a href="#">新版81技巧解锁搬砖新姿势<span>03/30</span></a></li>
+                            <li><a href="#">新十人团本琴魔开荒攻略解读<span>03/30</span></a></li>
+                            <li><a href="#">团队副本回顾系列之万雪窟<span>03/30</span></a></li>
+                            <li><a href="#">团队副本回顾系列之天峰会八荒<span>03/30</span></a></li>
+                            <li><a href="#">男默女泪 话本更新改动全体验<span>03/30</span></a></li>
+                            <li><a href="#">轻松打过万雪窟 95挑战简单打法<span>03/30</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>03/31</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/27</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                            <li><a href="#">天刀话本BOSS家庭住址大曝光<span>02/28</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="yu_gonghui">
+            <a href="#"><img src="images/home-guild.jpg" alt=""/></a>
+        </div>
+        <div class="yu_bottom">
+            <ul>
+                <li><a href="#"><img src="images/1458771921062999162.jpg" alt="" style="max-width: 100%"/></a></li>
+                <li><a href="#"><img src="images/1458776874552296223.jpg" alt="" id="yu_bottom_pic1"/></a></li>
+                <li><a href="#"><img src="images/1458776592794735747.jpg" alt="" style="max-width: 100%"/></a></li>
+                <li class="yu_bottom_tag1"><a href="#"><img src="images/1491978337.jpg" alt="" id="yu_bottom_pic2"/></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        var yu_tdzs=document.getElementById("yu_tdzs");
+        var yu_gfwx=document.getElementById("yu_gfwx");
+        var yu_img1=document.getElementById("yu_img1");
+        var yu_img2=document.getElementById("yu_img2");
+        var yu_lis1=document.getElementById("yu_ul1").children;
+        var yu_meiti_box1_top1_line=document.getElementById("yu_meiti_box1_top1_line");
+        var yu_meiti_box_con_allnews=document.getElementById("yu_meiti_box_con_allnews");
+        var yu_lis2=document.getElementById("yu_ul2").children;
+        var yu_gonglue_line2=document.getElementById("yu_gonglue_line2");
+        var yu_gonglue_b_con_allnews=document.getElementById("yu_gonglue_b_con_allnews");
+
+        var yu_tongren_tu=document.getElementById("yu_tongren_tu");
+        var yu_tongren_tu_lis=yu_tongren_tu.children;
+        //二维码切换
+
+        yu_tdzs.onclick=function(){
+            this.setAttribute("class","sp1 current1");
+            yu_img1.style.display="block";
+            yu_img2.style.display="none";
+            yu_gfwx.removeAttribute("class");
+
+
+
+        }
+
+        yu_gfwx.onclick=function(){
+            yu_gfwx.removeAttribute("class");
+            yu_tdzs.removeAttribute("class");
+            this.setAttribute("class","current1");
+//            this.getAttribute(this.setAttribute());
+
+            yu_tdzs.setAttribute("class","current2");
+            yu_img1.style.display="none";
+            yu_img2.style.display="block";
+
+        }
+        //媒体单击事件
+        for(var i=0;i<yu_lis1.length;i++){
+            yu_lis1[i].setAttribute("yu_index",i);
+            yu_lis1[i].onclick=function(){
+                for(var j=0;j<yu_lis1.length;j++){
+                    yu_lis1[j].removeAttribute("class");
+                }
+                this.setAttribute("class","yu_current1");
+                var targetlin1=this.getAttribute("yu_index")*50+46;
+                yu_animate(yu_meiti_box1_top1_line,targetlin1);
+                var targetnews1=-this.getAttribute("yu_index")*353;
+                yu_animate1(yu_meiti_box_con_allnews,targetnews1);
+            }
+            var yu_sdss;
+            yu_lis1[i].onmouseover=function(){
+                yu_sdss=this.style.color;
+                this.style.color="#ff8f17";
+            }
+            yu_lis1[i].onmouseout=function(){
+                this.style.color=yu_sdss;
+            }
+        }
+
+        //攻略
+        for(var i=0;i<yu_lis2.length;i++){
+            yu_lis2[i].setAttribute("yu_index2",i);
+            yu_lis2[i].onclick=function(){
+                for(var j=0;j<yu_lis2.length;j++){
+                    yu_lis2[j].removeAttribute("class")
+                }
+                this.setAttribute("class","yu_current2");
+                var targetlin2=this.getAttribute("yu_index2")*50+46;
+                yu_animate(yu_gonglue_line2,targetlin2);
+                var targetnews2=-this.getAttribute("yu_index2")*353;
+                yu_animate1(yu_gonglue_b_con_allnews,targetnews2);
+            }
+            var yu_sdss1;
+            yu_lis2[i].onmouseover=function(){
+                yu_sdss1=this.style.color;
+                this.style.color="#ff8f71";
+            }
+            yu_lis2[i].onmouseout=function(){
+                this.style.color=yu_sdss1;
+
+            }
+        }
+        //fanstab
+        $(function(){
+            var yu_tag2=true;
+            for(var i=0;i<yu_tongren_tu_lis.length;i++){
+                yu_tongren_tu_lis[i].children[0].setAttribute("index",i);
+
+            }
+            var yu_leftAll=['0px','68px','136px','204px','272px','340px'];
+            var yu_posxAll=['0px','-340px','-136px','-204px','-68px','-272px'];
+            for(var j=0;j<6;j++){
+                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index='+j+']').click(function(){
+                    if(yu_tag2){
+                        if($(this).attr('price')){
+                            for(var z=0;z<6;z++){
+                                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + z + ']').css('background-position-x', yu_posxAll[z]);
+                                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + z + ']').parent().animate({'left':yu_leftAll[z]},100
+                                );
+                            }
+                            $(this).removeAttr("price");
+                        }else {
+                            for (var s = 0; s < 6; s++) {
+                                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + s + ']').removeAttr("price");
+                            }
+                            $(this).attr("price", '10');
+                            var posx = parseInt($(this).css('backgroundPositionX'));
+//                        var $posy=$(this).attr('background-position-y');
+                            var yu_t = (posx - 408);
+                            $(this).css('background-position-x', yu_t + 'px');
+                            var yu_s = +$(this).attr('index');
+                            var yu_k = -(460 - 68 * (yu_s + 1));
+                            //作出判断哪些左移
+                            for (var k = 0; k <= yu_s; k++) {
+                                var yu_g = -(460 - 68 * (k + 1));
+
+                                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + k + ']').parent().animate({'left': yu_g}, 100
+                                        , function () {
+
+//                                           for (var y = yu_s + 1; y < 6; y++) {
+//                                               $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + y + ']').parent().animate({'left': yu_leftAll[y]}, 100
+//                                               );
+//                                           }
+                                            for (var g = yu_s + 1; g < 6; g++) {
+                                                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + g + ']').css('background-position-x', yu_posxAll[g]);
+                                            }
+                                            for (var t = 0; t < yu_s; t++) {
+                                                $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + t + ']').css('background-position-x', yu_posxAll[t]);
+                                            }
+                                        });
+                                for (var y = yu_s + 1; y < 6; y++) {
+                                    $('.yu_tongrentuijian>.yu_tongren_tu>ul>li>div[index=' + y + ']').parent().animate({'left': yu_leftAll[y]}, 100
+                                    );
+                                }
+                            }
+                        }
+
+//                        $(this).parent().animate({'left':yu_k},100)
+                    }
+
+                })
+            }
+
+        })
+        //淡入淡出划入滑出
+        $(function(){
+            $('.yu_ziyuan ul li a').mouseover(function(){
+                $(this).children('i').stop().animate({
+                    top:'-50px',
+                    opacity:0
+                },300)
+                $(this).children('span').stop().animate({
+                    bottom:'63px'
+                },300)
+            })
+            $('.yu_ziyuan ul li a').mouseout(function(){
+                $(this).children('i').stop().animate({
+                    top:'43px',
+                    opacity:1
+                },300)
+                $(this).children('span').stop().animate({
+                    bottom:'32px'
+                },300)
+            })
+
+        })
+
+
+
+        function yu_animate(obj,target){
+            clearInterval(obj.timeId);
+            obj.timeId=setInterval(function(){
+                var currentleft=obj.offsetLeft;
+                var step=currentleft<target?2:-2;
+                currentleft+=step;
+                if(Math.abs(target-currentleft)<Math.abs(step)){
+                    clearInterval(obj.timeId);
+                    obj.style.left=target+"px";
+                }else{
+                    obj.style.left=currentleft+"px";
+                }
+            },1)
+        }
+        function yu_animate1(obj,target){
+            clearInterval(obj.timeId);
+            obj.timeId=setInterval(function(){
+                var currentleft=obj.offsetLeft;
+                var step=currentleft<target?10:-10;
+                currentleft+=step;
+                if(Math.abs(target-currentleft)<Math.abs(step)){
+                    clearInterval(obj.timeId);
+                    obj.style.left=target+"px";
+                }else{
+                    obj.style.left=currentleft+"px";
+                }
+            },1)
+        }
+
+    </script>
+    <script>
+        //    right部分开始
+        var rtop = document.getElementById("rtop");
+        var rtoplis = rtop.children[0].children;
+        var rle = document.getElementById("rle");
+        var rle1 = document.getElementById("rle1");
+        var rle2 = document.getElementById("rle2");
+        var rle3 = document.getElementById("rle3");
+        var rle4 = document.getElementById("rle4");
+        var rri = document.getElementById("rri")
+
+        console.log(rtoplis[0]);
+
+        rtoplis[0].onclick = function(){
+            rtoplis[1].children[0].src = "image/单剑1.png"
+            rtoplis[2].children[0].src = "image/长枪1.png"
+            rtoplis[3].children[0].src = "image/扇子1.png"
+            rtoplis[4].children[0].src = "image/葫芦1.png"
+            this.children[0].src = "image/大刀3.png"
+
+            animate(rle1,{
+                "left":-150
+            },animate(rle,{
+                "left":18
+            }));
+
+            animate(rle2,{
+                "left":-150
+            },animate(rle,{
+                "left":18
+            }));
+
+            animate(rle3,{
+                "left":-150
+            },animate(rle,{
+                "left":18
+            }));
+
+            animate(rle4,{
+                "left":-150
+            },animate(rle,{
+                "left":18
+            }));
+        }
+
+        rtoplis[1].onclick = function(){
+            rtoplis[0].children[0].src = "image/大刀1.png"
+            rtoplis[2].children[0].src = "image/长枪1.png"
+            rtoplis[3].children[0].src = "image/扇子1.png"
+            rtoplis[4].children[0].src = "image/葫芦1.png"
+            this.children[0].src = "image/单剑3.png"
+
+            animate(rle,{
+                "left":-150
+            },animate(rle1,{
+                "left":18
+            }));
+
+            animate(rle2,{
+                "left":-150
+            },animate(rle1,{
+                "left":18
+            }));
+
+            animate(rle3,{
+                "left":-150
+            },animate(rle1,{
+                "left":18
+            }));
+
+            animate(rle4,{
+                "left":-150
+            },animate(rle1,{
+                "left":18
+            }));
+        }
+
+        rtoplis[2].onclick = function(){
+            rtoplis[0].children[0].src = "image/大刀1.png"
+            rtoplis[1].children[0].src = "image/单剑1.png"
+            rtoplis[3].children[0].src = "image/扇子1.png"
+            rtoplis[4].children[0].src = "image/葫芦1.png"
+            this.children[0].src = "image/长枪3.png"
+
+            animate(rle,{
+                "left":-150
+            },animate(rle2,{
+                "left":18
+            }));
+
+            animate(rle1,{
+                "left":-150
+            },animate(rle2,{
+                "left":18
+            }));
+
+            animate(rle3,{
+                "left":-150
+            },animate(rle2,{
+                "left":18
+            }));
+
+            animate(rle4,{
+                "left":-150
+            },animate(rle2,{
+                "left":18
+            }));
+        }
+
+        rtoplis[3].onclick = function(){
+            rtoplis[0].children[0].src = "image/大刀1.png"
+            rtoplis[2].children[0].src = "image/长枪1.png"
+            rtoplis[1].children[0].src = "image/单剑1.png"
+            rtoplis[4].children[0].src = "image/葫芦1.png"
+            this.children[0].src = "image/扇子3.png"
+
+            animate(rle,{
+                "left":-150
+            },animate(rle3,{
+                "left":18
+            }));
+
+            animate(rle1,{
+                "left":-150
+            },animate(rle3,{
+                "left":18
+            }));
+
+            animate(rle2,{
+                "left":-150
+            },animate(rle3,{
+                "left":18
+            }));
+
+            animate(rle4,{
+                "left":-150
+            },animate(rle3,{
+                "left":18
+            }));
+        }
+
+        rtoplis[4].onclick = function(){
+            rtoplis[0].children[0].src = "image/大刀1.png"
+            rtoplis[2].children[0].src = "image/长枪1.png"
+            rtoplis[3].children[0].src = "image/扇子1.png"
+            rtoplis[1].children[0].src = "image/单剑1.png"
+            this.children[0].src = "image/葫芦3.png"
+
+            animate(rle,{
+                "left":-150
+            },animate(rle4,{
+                "left":18
+            }));
+
+            animate(rle2,{
+                "left":-150
+            },animate(rle4,{
+                "left":18
+            }));
+
+            animate(rle3,{
+                "left":-150
+            },animate(rle4,{
+                "left":18
+            }));
+
+            animate(rle1,{
+                "left":-150
+            },animate(rle4,{
+                "left":18
+            }));
+        }
+
+        //    right部分结束
+
+        //    li标签重灾区开始
+        var tul = document.getElementById("top-ul");
+        var liLis = tul.getElementsByTagName("li");
+        var libtm = document.getElementById("li-bottom");
+        var ulLis = libtm.getElementsByTagName("ul");
+
+        for(var i = 0;i<liLis.length;i++){
+            liLis[i].index = i;
+            liLis[i].onclick = function(){
+                for(var j = 0;j<ulLis.length;j++){
+                    ulLis[j].removeAttribute("class");
+                }
+                for(var j = 0;j<liLis.length;j++){
+                    liLis[j].style.borderBottom = null;
+                }
+                this.style.borderBottom = "2px solid  #2fc3a2";
+//            this.style.borderBottomStyle = "solid";
+//            this.style.borderBottomColor = "yellow";
+
+                var index = this.index;
+                ulLis[index].setAttribute("class","kj-show");
+            }
+        }
+        //    li标签重灾区结束
+
+        //    left部分开始
+        var kjleft = document.getElementById("kj-left");
+        var divs = kjleft.children;
+
+        for(var i = 0;i<divs.length;i++){
+//        console.log(divs[i].children[0]);
+            divs[i].onmouseover = function(){
+                animate(this.children[0],{
+                    "opacity":1
+                });
+
+                animate(this.children[1].children[0],{
+                    "margin-top":-20
+                });
+
+                animate(this.children[1].children[1],{
+                    "top":40
+                });
+            }
+
+            divs[i].onmouseout = function(){
+                animate(this.children[0],{
+                    "opacity":0
+                });
+
+                animate(this.children[1].children[0],{
+                    "margin-top":16
+                });
+
+                animate(this.children[1].children[1],{
+                    "top":64
+                });
+            }
+        }
+        //    left部分结束
+
+
+
+
+    </script>
+
+    <!-- ad结束-->  
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>天涯明月刀</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+	<title>天涯明月刀-游戏中心</title>
+    <script src="js/lib/jquery-1.12.4.min.js"></script>
+    <script src="animate.js"></script>
+    <!-- <script src="js/index.js"> </script> -->
+    <script>
+        $(function () {
+
+
+            $('.tupul').children().mouseover(function () {
+                $('.tupul').children().css('-webkit-transform', 'scale(1)')
+
+                $(this).css('-webkit-transform', 'scale(1.4)')
+            })
+            $('.tupul').on('mouseout', 'li', function () {
+                $(this).css('-webkit-transform', 'scale(1)')
+            })
+
+            $('#ol1').children().click(function () {
+                $('#olyi').fadeIn(700);
+            })
+            $('#ol1').children().first().click(function () {
+                $('#olyi').css('display', 'none')
+            })
+
+            $('#olyi').children().first().click(function () {
+                $('#olyi').css('display', 'none')
+            })
+
+
+            // $('#ol1').children().click(function () {
+
+            //     // var tong = $(this).index();
+            //     $('#olyi').children().removeClass('currrent');
+            //     $(this).addClass('currrent');
+
+            //     if ($(this).index() < 3) {
+
+            //         var settop = -$(this).index() * $('#one11').height();
+            //         $('#bigul').animate({
+            //             'top': settop
+            //         }, 500)
+            //     } else {
+            //         $('#ol1').children().removeClass('currrent');
+            //         $(this).addClass('currrent');
+            //         var settop1 = -$(this).index() * $('.hei').height();
+            //         $('#bigul').animate({
+            //             'top': settop1
+            //         }, 500)
+            //     }
+
+
+            // })
+
+
+            // var $tong = 0;
+
+            $('#ol1').children().click(function () {
+
+                var $tong = $(this).index();
+
+
+                var $settop = 0;
+                $('#ol1').children().removeClass('currrent');
+                $(this).addClass('currrent');
+
+                if ($(this).index() < 3) {
+                    settop = -$(this).index() * $('#one11').height();
+                    $('#bigul').animate({
+                        'top': settop
+                    }, 500)
+                } else {
+                    settop = -$(this).index() * $('.hei').height() - (3 * 359);
+                    $('#bigul').animate({
+                        'top': settop
+                    }, 500)
+                }
+                $('#olyi').children().removeClass('currrent');
+                $('#olyi').children().eq($tong).addClass('currrent');
+                console.log($tong);
+            })
+
+
+            // $('#olyi').children().eq($tong).addClass('currrent');
+            // console.log($tong);
+
+            $('#olyi').children().click(function () {
+
+                var $settop = 0;
+                $('#olyi').children().removeClass('currrent');
+                $(this).addClass('currrent');
+
+                if ($(this).index() < 3) {
+                    settop = -$(this).index() * $('#one11').height();
+
+                    $('#bigul').animate({
+                        'top': settop
+                    }, 500)
+                } else {
+                    settop = -$(this).index() * $('.hei').height() - (3 * 359);
+
+                    $('#bigul').animate({
+                        'top': settop
+                    }, 500)
+                }
+            })
+
+
+            // $('#ol1').children().click(function () {
+            //     $('#ol1').children().removeClass('currrent');
+            //     $(this).addClass('currrent');
+            //     var settop = -$(this).index() * $('.hei').height();
+            //     $('#bigul').animate({
+            //         'top': settop
+            //     }, 500)
+            // })
+            // $('.th3').mouseover(function () {
+            //     $('.th3').show(500);
+            // })
+
+            $('#tt2').children().mouseover(function () {
+
+                $(this).parent().siblings().children().eq($(this).index()).animate({
+                    'top': '200px',
+                    'opacity': 1.0,
+                }, 500)
+            })
+
+
+
+
+            $('#tt2').children().mouseout(function () {
+                $(this).parent().siblings().children().stop();
+                $('.th3').children().animate({
+                    'top': '40px',
+                    'opacity': .0
+                }, 500)
+            })
+
+            $('#tt2').children().mouseover(function () {
+
+                $(this).animate({
+
+                    'opacity': 1.0
+                }, 200)
+            })
+
+            $('#tt2').children().mouseout(function () {
+                $('#tt2').children().animate({
+
+                    'opacity': .0
+                }, 100)
+            })
+
+
+            $('.video1').click(function () {
+                // console.log('我被点了')
+                $('.mark').css('display', 'block');
+                $('video').css('display', 'block');
+                $('#span2').css('display', 'block');
+            })
+
+            $('#span2').click(function () {
+                console.log('点了')
+                $('.mark').css('display', 'none');
+                $('video').css('display', 'none');
+                $('#span2').css('display', 'none');
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+    <ul id="bigul">
+        <li class="diyi"><img src="css/image/bg-1.jpg" alt="" />
+            <div class="dazhi"></div>
+            <div class="xiaozhi"></div>
+            <ul class="ol1" id="ol1">
+                <li class="current">场景</li>
+                <li>人物</li>
+                <li>剧情</li>
+                <li>战斗</li>
+                <li>门派</li>
+                <li>盟会</li>
+                <li>身份</li>
+                <li></li>
+            </ul>
+        </li>
+        <li id="one11">
+            <img src="css/image/bg-2.jpg" alt="" />
+            <div class="tit1"></div>
+            <div class="tt2" id="tt2">
+                <div class="oneo"></div>
+                <div class="onetw"></div>
+                <div class="onetr"></div>
+                <div class="onefo"></div>
+            </div>
+            <div class="th3" id="th3">
+                <div class="tneo"></div>
+                <div class="tnetw"></div>
+                <div class="tnetr"></div>
+                <div class="tnefo"></div>
+            </div>
+        </li>
+        <li><img src="css/image/bg-3.jpg" alt="" />
+            <div class="video1">
+                <div><img src="css/image/bofan.png" alt=""></div>
+            </div>
+            <div class="mark"></div>
+            <div>
+                <video width="1000px" height="565px" src="css/radio/meinv.mp4" controls>
+
+                </video>
+            </div>
+            <span class="span1" id="span2">X</span>
+
+
+            <div class="tit2"></div>
+            <ul class="ul2">
+                <li><span class="one">每个人的样子 就是他的故事</span></li>
+                <li><span>公子羽：
+谁戴上了青铜面具，谁就是武林中最有权势的</span></li>
+                <li><span class="two">人</span></li>
+                <li><span>明月心：
+我望着你的时候，更希望看见的不是面具，而</span></li>
+                <li><span class="two">是你的样子。</span></li>
+                <li><span>公子羽：
+只要看到一个人穿什么，做什么，就能知道他</span></li>
+                <li><span class="two">心里在想什么。</span></li>
+                <li><span>明月心：
+而明月本没有心。</span></li>
+            </ul>
+            <div class="nielian">
+                <span>捏 脸 效 果 显 示</span>
+
+                <div class="tup">
+                    <ul class="tupul">
+                        <li><img src="css/image/face-1.jpg" alt="" /></li>
+                        <li><img src="css/image/face-2.jpg" alt="" /></li>
+                        <li><img src="css/image/face-3.jpg" alt="" /></li>
+                        <li><img src="css/image/face-4.jpg" alt="" /></li>
+                        <li><img src="css/image/face-5.jpg" alt="" /></li>
+                        <li><img src="css/image/face-6.jpg" alt="" /></li>
+                        <li><img src="css/image/face-7.jpg" alt="" /></li>
+                        <li><img src="css/image/face-8.jpg" alt="" /></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meinv"></div>
+        </li>
+        <li class="hei"><img src="css/image/bb3.png" alt="" width="1536px" height="741px" />
+            <!-- <div class="tit3"></div> -->
+        </li>
+        <li><img src="css/image/bb4.png" alt="" width="1536px" height="741px" />
+            <!-- <div class="tit4"></div> -->
+        </li>
+        <li><img src="css/image/bb5.png" alt="" width="1536px" height="741px" />
+            <!-- <div class="tit5"></div> -->
+            <!-- <div class="tangmen"></div> -->
+        </li>
+        <li><img src="css/image/bb6.png" alt="" width="1536px" height="741px" />
+            <!-- <div class="tit6"></div> -->
+        </li>
+        <li><img src="css/image/bb7.png" alt="" width="1536px" height="741px" />
+            <!-- <div class="tit7"></div> -->
+
+        </li>
+
+    </ul>
+    <ol class="olyic" id="olyi">
+        <li>首页</li>
+        <li>场景</li>
+        <li>人物</li>
+        <li>剧情</li>
+        <li>战斗</li>
+        <li>门派</li>
+        <li>盟会</li>
+        <li>身份</li>
+
+    </ol>
+
+</body>
+
+</html>

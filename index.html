@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>天涯明月刀</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/Windex.css"/>
+    <link rel="stylesheet" href="font/iconfont.css"/>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+            text-decoration: none;;
+        }
+        .l{
+            float:left;
+        }
+        .r{
+            float:right;
+        }
+        .w{
+            width:1000px;
+            margin:0 auto;
+        }
+        .All{
+            height:605px;
+            width:100%;
+            background:url("image/role-bg-2.jpg");
+        }
+        .images{
+            margin-top:50px;
+            margin-bottom: 50px;
+        }
+        .mid{
+            height:355px;
+            width:1000px;
+            /*border:1px solid gray;*/
+            /*overflow:hidden;*/
+
+        }
+        .other{
+            width:7000px;
+        }
+       .mid>div{
+           float:left;
+
+       }
+       .mid div ul{
+           display:none
+       }
+        /*<!--显示和隐藏的大背景图片-->*/
+       .mid div >ul.current{
+           display:block;
+       }
+        .mid div>img{
+            width:62px;
+            height:100%;
+        }
+        /*第一张图片*/
+        .mid #first>.n1{
+            display:none;
+        }
+        .mid ul .num{
+             width:510px;
+            height:309px;
+          
+            padding-top:35px;
+            padding-left:50px;
+            background:rgba(43,46,53,.7);
+            position:relative;
+        }
+        .mid ul li>p{
+            font-size:55px;
+            color:#CFAE69;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .mid ul li .limid {
+            width:250px;
+            font-size:14px;
+            color:#B7B7B7;
+			margin-top:25px;
+        }
+        .mid ul li span{
+            color:#2FA76A;
+            font-size:18px;
+
+        }
+        .mid ul li .limid .two{
+            font-size:16px;
+            color:white;
+            margin-top:10px;
+            margin-bottom:8px;
+        }
+        .mid ul li .limid .three{
+            height:30px;
+            width:100px;
+            border-radius:15px ;
+            background-color: #CFAE69;
+            font-size:16px;
+            color:white;
+            text-align:center;
+            line-height:30px;
+        }
+        .mid ul li .five{
+            position:absolute;
+            top:-78px;
+            right:0px;
+        }
+        /*//盒子开始*/
+        .boxs{
+            height:140px;
+            margin-top:90px;
+            position:relative;
+        }
+        .boxs .left{
+            width:495px;
+            height:140px;
+			line-height:60px;
+            background:url("image/a01.bmp");
+            position:relative;
+        }
+        .boxs .left span a{
+            position: absolute;
+            left: -210px;
+            top: -40px;
+            width:495px;
+            height:140px;
+        }
+        .boxs  img{
+            position:absolute;
+            top:38px;
+            left:123px;
+        }
+        .boxs span{
+            display:inline-block;
+            font-size:46px;
+            font-weight:bold;
+            color:white;
+            position:absolute;
+            top:42px;
+            left:210px;
+        }
+        .boxs .right{
+            width:495px;
+			line-height:60px;
+            height:140px;
+            background:url("image/c02.bmp");
+            position:relative;
+        }
+        .fourbox{
+            margin-top:15px;
+        }
+      .fourbox div{
+          height:90px;
+          width:240px;
+          background-color:gray;
+            text-align:center;
+            line-height:90px;
+        }
+      .fourbox div a{
+          display:inline-block;
+          color:white;
+          text-decoration: none;
+          font-size:40px;
+          font-weight:bold;
+
+      }
+        .fourbox  .two,.three{
+            margin-left:15px;
+        }
+      .bgimg{
+          margin-top:20px;
+      }
+      .bottom{
+          background-color:#202020;
+          height:160px;
+      }
+        .bottom img{
+            padding-left:35px;
+        }
+    </style>
+</head>
+<body>
+<div class="W">
+    <!-- 通栏开始-->
+    <div class="Ttop" id="Ttop">
+        <div class="top w">
+            <a href="#" class="tx"></a>
+            <a href="#" class="meinv" id="meinv">
+                <img src="image/meinv.jpg" alt=""/>
+                <div class="jl" id="jl">
+                    <img src="image/jl.png" alt=""/>
+                </div>
+            </a>
+            <a href="#" class="cz">成长守护平台</a>
+            <!--游戏排行列表-->
+            <span class="rank" id="rank">
+	             <a href="#" class="rank2" id="rank2">腾讯游戏排行榜</a>
+	             <span class="rankList" id="bt1">v</span>  
+		         <div class="gameList" id="gameList">
+	                <span class="corner"></span>
+	                <span class="corner2"></span>
+	                    <ul class="list1" id="list1">
+	                        <li>游戏排行榜
+	                            <a href="#">更多</a>
+	                        </li>
+	                        <li>排名&nbsp;&nbsp;&nbsp;游戏</li>
+	                        <li>极品飞车onlie</li>
+	                        <li>变形金刚OL</li>
+	                        <li>冒险岛</li>
+	                        <li>兽人必须死</li>
+	                        <li>火源计划</li>
+	                        <li>流放之路</li>
+	                        <li>全职大师</li>
+	                        <li>刀锋铁骑</li>
+	                        <li>蛇蛇争霸</li>
+	                        <li>斗罗大陆</li>
+	                    </ul>
+	                    <ul class="list2" id="list2">
+	                        <li>热门排行榜
+	                            <a href="#">更多</a>
+	                        </li>
+	                        <li>排名&nbsp;&nbsp;&nbsp;游戏</li>
+	                        <li>英雄联盟</li>
+	                        <li>地下城与勇士</li>
+	                        <li>穿越火线</li>
+	                        <li>QQ炫舞</li>
+	                        <li>FIFA Online3</li>
+	                        <li>QQ飞车</li>
+	                        <li>逆战</li>
+	                        <li>天涯明月刀</li>
+	                        <li>英魂之刃</li>
+	                        <li>梦幻恋舞</li>
+	                    </ul>
+	                    <ul class="list3" id="list3">
+	                        <li>手游排行榜
+	                            <a href="#">更多</a>
+	                        </li>
+	                        <li>排名&nbsp;&nbsp;&nbsp;游戏</li>
+	                        <li>王者荣耀</li>
+	                        <li>穿越火线</li>
+	                        <li>天天酷跑</li>
+	                        <li>欢乐斗地主</li>
+	                        <li>热血传奇</li>
+	                    </ul>
+	        	</div>
+         </span>	
+        </div>
+    </div>
+    <!-- 通栏结束-->
+
+    <!--大背景开始 -->
+    <video src="vd.mp4" width="790" height="450" class="move" id="move"></video>
+    <div class="Tbbg" id="Tbbg">
+        <span class="lg"><a href="#"><img src="image/logo.png" alt=""/></a></span>
+        <div class="bbg w">
+            <div class="tool">
+                <div class="gw"><a href="官网首页/index-blade.html">进入官网</a></div>
+                <div class="xz"><a href="#">下载游戏</a></div>
+            </div>
+            <div class="vd" id="btn">播放</div>
+            <div class="content">
+                <span><a href="#"><img src="image/b20160929-1.jpg" alt=""/></a></span>
+                <span><a href="#"><img src="image/b20160929-2.jpg" alt=""/></a></span>
+                <div class="lbt" id="lbt">
+                    <ul>
+                        <li><a href="#"><img src="image/1499845060.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="image/1499916454.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="image/1499918316.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="image/1499930016.jpg" alt=""/></a></li>
+                    </ul>
+
+                    <div class="box" id="box">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <span class="or"><a href="#">新手指南</a></span>
+                        <span class="txt">玩转天涯不用愁</span>
+                        <img src="image/1.bmp" alt=""/>
+                        <div class="yx"></div>
+                    </li>
+                    <li>
+                        <span class="or"><a href="游戏中心/天涯明月刀-游戏中心页面.html">游戏特色</a></span>
+                        <span class="txt">天涯明月真江湖</span>
+                        <img src="image/2.bmp" alt=""/>
+                        <div class="yx"></div>
+                    </li>
+                    <li>
+                        <span class="or"><a href="activeCenter.html">活动中心</a></span>
+                        <span class="txt">礼包福利一网打尽</span>
+                        <img src="image/3.bmp" alt=""/>
+                        <div class="yx"></div>
+                    </li>
+                    <li>
+                        <span class="or"><a href="#">设定站</a></span>
+                        <span class="txt">你不知道的天刀</span>
+                        <img src="image/4.bmp" alt=""/>
+                        <div class="yx"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--大背景结束 -->
+
+    <!-- 小背景开始-->
+    <div class="Tsbg" id="Tsbg">
+        <div class="sbg w">
+            <div class="title">
+                <span class="bl">全新内容</span>
+                <span class="gr">精彩呈现</span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <div class="sz">01</div>
+                        <span class="hh">航海玩法</span>
+                        <span class="yf">杨帆起航</span>
+                        <a href="#">查看详情</a>
+                    </li>
+                    <li>
+                        <div class="sz">02</div>
+                        <span class="hh">半青少女</span>
+                        <span class="yf">萌动八荒</span>
+                        <a href="#">查看详情</a>
+                    </li>
+                    <li>
+                        <div class="sz">03</div>
+                        <span class="hh">青龙永夜</span>
+                        <span class="yf">命运转折</span>
+                        <a href="#">查看详情</a>
+                    </li>
+                    <li>
+                        <div class="sz">04</div>
+                        <span class="hh">等级突破</span>
+                        <span class="yf">直升90级</span>
+                        <a href="#">查看详情</a>
+                    </li>
+                    <li>
+                        <div class="sz">05</div>
+                        <span class="hh">全新大区</span>
+                        <span class="yf">沧海云帆</span>
+                        <a href="#">查看详情</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 小背景结束-->
+
+
+    <!--固定块开始-->
+    <div class="fixf">
+        <div class="top">
+            <p class="text1">下载天刀官方助手</p>
+            <p class="text2">领取50万修为</p>
+        </div>
+        <div class="middle">
+            <a href="#">
+                <img src="image/wuxia-app-for-android.png" alt=""/>
+            </a>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a href="activeCenter.html">01 精彩活动</a></li>
+                <li><a href="#">02 版本内容</a></li>
+                <li><a href="#">03 八荒门派</a></li>
+            </ul>
+        </div>
+        <div class="footer"><a href="官网首页/index-blade.html">进入官网</a></div>
+        <div class="footer1"><a href="">游戏下载</a></div>
+    </div>
+    <div class="fixt"></div>
+
+</div>
+<div class="All">
+      <div class="w">
+          <img class="images" src="image/01.bmp" alt=""/>
+          <div class="other">
+          <div class="mid">
+
+        <!--*第一张图片*-->
+              <div id="first" class="A">
+                  <!--第一张图片小图片-->
+                   <img class="n1" src="image/role2.jpg" alt=""/>
+                    <!--包裹的盒子--> <!--第一张图片的隐藏的内容-->
+
+
+
+
+
+                 <!--显示和隐藏的大背景图片-->
+
+                  <ul class="current">
+                       <li class="num">
+                        <p>神刀</p>
+                         <div class="limid">
+                               <span>刀含杀气腾幽朔，萧飒寒芒泣鬼神</span>
+
+                               <p class="one">长刀掠世，雄鹰相随，勇者初心无惧，仁者自可无敌。
+                                   神刀乃傅红雪叶开所在之门派，江湖中第一用刀之门派
+                                  ，亦是八荒中最为特立独行、潇洒率性之门派...
+                               </p>
+
+                                <p class="two">操作难度</p>
+                                <img src="image/s02.bmp" alt=""/>
+                                <p class="three">查看更多+</p>
+                         </div>
+
+                          <img class="five last" src="image/role2.png" alt=""/>
+                      </li>
+                   </ul>
+              </div>
+              <!--*第二张图片*-->
+              <div id="secend" clas="B">
+                  <img class="n1" src="image/role4.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p>太白</p>
+                          <div class="limid">
+                              <span> 流星白羽光出匣，一剑无痕雪漫山</span>
+
+                              <p class="one">风无痕本是开封府司录司参军事，
+                                  负责协助捕门之人，利用强大的分析能力来推理查案
+                                  。在多年的查案之中，风无痕因偶然机会获取本被认为
+                                  是医书的《破穴论》...
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role4.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+
+              <div  clas="C">
+                  <img class="n1" src="image/role3.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p>神威</p>
+                          <div class="limid">
+                              <span>  神威倒卷翻空浪，一举冲霄气势雄 </span>
+
+                              <p class="one">  后周副都指挥使韩通于954年创立“神
+                                  威营”，忠诚守护后周皇室安全。韩通之子韩微，
+                                  曾几次劝说父亲除去后周重臣赵匡胤，但韩通却欣赏
+                                  赵匡胤之人才气度...
+
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role3.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+
+              <div  clas="D">
+                  <img class="n1" src="image/role5.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p>唐门</p>
+                          <div class="limid">
+                              <span>雾霭云从飞星落，半影相依扇中情  </span>
+
+                              <p class="one">
+                                  蜀中唐氏，自魏晋起便为世家。五代十国之时，唐门少主唐郢化名卢郢，游历江南，更是进士及第，成为南唐的文武双进士，天下闻名...
+
+
+
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role5.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+
+              <div  clas="E">
+                  <img class="n1" src="image/role7.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p> 五毒</p>
+                          <div class="limid">
+                              <span>雾霭云从飞星落，半影相依扇中情  </span>
+
+                              <p class="one">
+                                  地处云滇的五毒与中原诸派均有所不同，
+                                  其武学以狠、诡、毒、快为要诀，以诡秘凌厉的刀法配合神鬼莫测的身法
+                                  ，可谓是举手之间、取人性命；轻烟散尽、乃见五毒。
+
+
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role7.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+
+
+              <div clas="F">
+                  <img class="n1" src="image/role6.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p>   天香</p>
+                          <div class="limid">
+                              <span> 竞夸天下双无绝，独立人间第一香 </span>
+
+                              <p class="one">
+                                  地处云滇的五毒与中原诸派均有所不同，
+                                  其武学以狠、诡、毒、快为要诀，以诡秘凌厉的刀法配合神鬼莫测的身法
+                                  ，可谓是举手之间、取人性命；轻烟散尽、乃见五毒。
+
+
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role6.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+
+              <div  clas="F">
+                  <img class="n1" src="image/role8.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p>真武</p>
+                          <div class="limid">
+                              <span>灵妙潜通乘风起，太极玄虚若镜清  </span>
+
+                              <p class="one">
+
+                                  真武祖师张梦白本是书香门第出身，屡试不中时竟在襄州山中偶遇
+                                  一似癫似疯之道人扶摇子。得其点化，张梦白以文入武
+                                  ，更习得驱影之术...
+
+
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role8.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+
+
+              <div  clas="G">
+                  <img class="n1" src="image/role1.jpg" alt=""/>
+                  <ul>
+                      <li class="num">
+                          <p>  丐帮</p>
+                          <div class="limid">
+                              <span>醉来豪气不可收，嘘作长虹贯牛斗 </span>
+
+                              <p class="one">
+                                  丐帮最早的源流可追溯到春秋时期，但正式作为一个门派
+                                  存在于江湖之中，则是从唐末开始。黄巢起义中，某金姓将
+                                  领因不满义军暴虐残害百姓...
+
+
+                              </p>
+                              <p class="two">操作难度</p>
+                              <img src="image/s02.bmp" alt=""/>
+                              <p class="three">查看更多+</p>
+                          </div>
+
+                          <img class="five" src="image/role1.png" alt=""/>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          </div>
+      </div>
+  </div>
+
+
+  <div class="boxs w">
+      <div class="left l">
+          <img src="image/b01.bmp" alt=""/>
+          <span>进入官网
+          		<a href="官网首页/index-blade.html"></a>
+          </span>
+      </div>
+      <div class="right r">
+          <img src="image/c01.bmp" alt=""/>
+          <span>游戏下载</span>
+      </div>
+  </div>
+  <!--//跳转页面-->
+  
+  <div class="fourbox w">
+      <div class="one l"><a href="新手指南/zhinan.html">新手指南</a></div>
+      <div class="two l"><a href="activeCenter-jQuery版.html">活动中心</a></div>
+      <div class="three l"><a href="li-index.html">世界背景</a> </div>
+      <div class="four r"><a href="逍遥客栈.html">逍遥客栈</a></div>
+  </div>
+  
+  <div class="bgimg"><img src="image/bg.bmp" alt=""/></div>
+  
+   <div class="bottom">
+       <div class="w">
+           <img src="image/d01.bmp" alt=""/>
+       </div>
+   </div>
+   
+<script src="js/Windex.js"></script>
+
+  <script>
+     $("img[class=n1]").mouseover(function(){
+
+
+//         //大背景的现实和隐藏
+          var index=$(this).parent().index();
+         console.log(index);
+         $("img[class=n1]").each(function(i){
+             if(i<=index){
+                 $("img[class=n1]").css("display","block")
+                 $(this).css("display","none")
+                 $("img[class=n1]").siblings().removeClass("current");
+                 $(this).siblings().addClass("current");
+                 $(this).siblings().animate({"left":62*i},200)
+             }else{
+                 $(this).siblings().animate({"left":564+62*(i-1)},200)
+             }
+         })
+     })
+
+
+
+
+  </script>
+</body>
+</html>

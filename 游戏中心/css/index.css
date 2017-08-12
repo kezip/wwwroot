@@ -1,0 +1,470 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+ul li img {
+    list-style: none;
+    z-index: 0;
+}
+
+ul li {
+    /*z-index: 0;*/
+    list-style: none;
+    position: relative;
+}
+
+
+/*��һ�ſ�ʼ*/
+
+ul li .dazhi {
+    width: 682px;
+    height: 336px;
+    background: url("image/jh.png");
+    position: absolute;
+    top: 100px;
+    left: 424px;
+}
+
+ul li .xiaozhi {
+    width: 160px;
+    height: 50px;
+    background: url("image/jh.png") no-repeat;
+    background-position: 0 -342px;
+    position: absolute;
+    top: 77px;
+    left: 39px;
+}
+
+#one11 .tt2 {
+    position: absolute;
+    top: 353px;
+    left: 438px;
+    width: 1064px;
+    height: 540px;
+    z-index: 2;
+    /* background-color: red; */
+}
+
+#one11 .tt2 div {
+    position: absolute;
+    width: 266px;
+    height: 540px;
+    z-index: 5;
+    opacity: .0;
+}
+
+#one11 .tt2 .oneo {
+    width: 266px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: pink; */
+    background: url(image/utd.png) 0 0px no-repeat;
+}
+
+#one11 .tt2 .onetw {
+    width: 266px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 266px;
+    /* background-color: pink; */
+    background: url(image/utd.png) -266px 0px no-repeat;
+}
+
+#one11 .tt2 .onetr {
+    width: 266px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 532px;
+    /* background-color: pink; */
+    background: url(image/utd.png) -532px 0px no-repeat;
+}
+
+#one11 .tt2 .onefo {
+    width: 266px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 798px;
+    /* background-color: pink; */
+    background: url(image/utd.png) -798px 0px no-repeat;
+}
+
+#one11 .th3 {
+    position: absolute;
+    top: 40px;
+    left: 465px;
+    width: 1064px;
+    height: 360px;
+    z-index: 2;
+}
+
+#one11 .th3 div {
+    position: absolute;
+    width: 266px;
+    height: 360px;
+    z-index: 5;
+    opacity: .0;
+}
+
+#one11 .th3 .tneo {
+    width: 266px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: pink; */
+    background: url(image/utd.png) 0 -542px no-repeat;
+}
+
+#one11 .th3 .tnetw {
+    width: 266px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 266px;
+    /* background-color: pink; */
+    background: url(image/utd.png) -266px -542px no-repeat;
+}
+
+#one11 .th3 .tnetr {
+    width: 266px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 532px;
+    /* background-color: pink; */
+    background: url(image/utd.png) -532px -542px no-repeat;
+}
+
+#one11 .th3 .tnefo {
+    width: 266px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 798px;
+    /* background-color: pink; */
+    background: url(image/utd.png) 0 -542px no-repeat;
+}
+
+
+/*��2�ſ�ʼ*/
+
+
+/* ul li#one11 {
+    z-index: 0;
+    left: 0;
+    top: 0px;
+}
+
+ul li#one11 .tt2 {
+    position: absolute;
+    left: 290px;
+    top: 1247px;
+}
+
+ul li#one11 .th3 {
+    position: absolute;
+    left: 437px;
+    top: 352px;
+    background: url("image/utd33.png") no-repeat;
+    opacity: 0;
+    width: 300px;
+    height: 700px;
+} */
+
+ul li .tit1 {
+    width: 906px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    background: url("image/h2.png");
+    background-position: 1px 200px;
+}
+
+
+/*�����ſ�ʼ*/
+
+ul li .meinv {
+    width: 600px;
+    height: 742px;
+    background: url("image/meinv.png") no-repeat;
+    position: absolute;
+    left: 702px;
+    top: 70px;
+}
+
+ul li .tit2 {
+    width: 375px;
+    height: 91px;
+    position: absolute;
+    top: 98px;
+    left: 220px;
+    background: url("image/h2.png");
+    background-position: -270px 770px;
+}
+
+ul li .ul2 {
+    width: 381px;
+    height: 217px;
+    position: absolute;
+    top: 195px;
+    left: 220px;
+}
+
+ul li .ul2 .one {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+ul li .ul2 span {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+}
+
+ul li .ul2 .two {
+    margin-left: 54px;
+}
+
+ul li .nielian {
+    width: 344px;
+    height: 152px;
+    position: absolute;
+    top: 466px;
+    left: 230px;
+}
+
+ul li .nielian span {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 22px;
+    font-family: "����";
+    border-bottom: 2px solid #ccc;
+}
+
+
+/*动画插入  */
+
+ul li .video1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #2fc3a3;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    left: 710px;
+    top: 600px;
+    z-index: 3;
+}
+
+ul li .video1 div {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+}
+
+ul li .mark {
+    width: 1920px;
+    height: 1100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background-color: rgba(146, 144, 143, .4);
+    display: none;
+}
+
+ul li video {
+    display: none;
+    position: absolute;
+    left: 266px;
+    top: 150px;
+    z-index: 5;
+}
+
+ul li .span1 {
+    font-size: 30px;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    left: 1266px;
+    top: 170px;
+    z-index: 6;
+    display: none;
+    cursor: pointer;
+}
+
+ul li .nielian .tupul {
+    width: 344px;
+    height: 153px;
+    margin-top: 10px;
+}
+
+ul li .nielian .tupul li {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+ul li .nielian .tupul li img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/*��4�ſ�ʼ*/
+
+
+/* ul li .tit4 {
+    width: 906px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    background: url("image/h2.png");
+    background-position: 1px 487px;
+} */
+
+
+/*��5�ſ�ʼ*/
+
+
+/* ul li .tit5 {
+    width: 638px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: -74px;
+    background: url("image/h2.png");
+    background-position: 1px 347px; */
+
+
+/*�����ſ�ʼ*/
+
+ul li .tangmen {
+    width: 839px;
+    height: 907px;
+    background: url("image/tangmen.png") no-repeat;
+    position: absolute;
+    left: 633px;
+    top: -10px;
+}
+
+
+/*��7�ſ�ʼ*/
+
+
+/* ul li .tit6 {
+    width: 906px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    background: url("image/h2.png");
+    background-position: 1px 1px;
+} */
+
+
+/*�ڰ��ſ�ʼ*/
+
+ul li .shashou {
+    width: 359px;
+    height: 724px;
+    background: url("image/shashou.png") no-repeat;
+    position: absolute;
+    left: 645px;
+    bottom: 30px;
+}
+
+
+/*��8�ſ�ʼ*/
+
+
+/* ul li .tit7 {
+    width: 906px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    background: url("image/h2.png");
+    background-position: 1px 71px;
+} */
+
+ul li .ol1 {
+    width: 836px;
+    height: 90px;
+    list-style: none;
+    position: absolute;
+    top: 496px;
+    left: 358px;
+}
+
+ul li .ol1 li {
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    border: 1px solid #cc0;
+    text-align: center;
+    line-height: 88px;
+    margin-top: -1px;
+    margin-left: 24px;
+    cursor: pointer;
+    float: left;
+}
+
+ul li .ol1 li:last-child {
+    display: none;
+}
+
+ul li .ol1 li.current {
+    background-color: #2fc3a3;
+    opacity: 0.5;
+    color: #fff;
+}
+
+ol {
+    list-style: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.olyic {
+    display: none;
+}
+
+.olyic li {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #fffff6;
+    text-align: center;
+    line-height: 50px;
+    margin-top: -1px;
+    margin-left: 10px;
+    cursor: pointer;
+    float: left;
+    background-color: rgba(255, 255, 255, .1);
+    color: #000;
+}
+
+.olyic li.currrent {
+    background-color: #2fc3a3;
+    opacity: 0.7;
+}
